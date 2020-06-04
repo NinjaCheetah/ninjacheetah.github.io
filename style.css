@@ -154,3 +154,25 @@
     text-decoration: none;
     display: block;
   }
+  .tech_projects a {
+    color: blue;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+  }
+  .tech_projects a:visited {
+    color:blue;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  .tech_projects h1 {
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size: 24px;
+    text-align: center;
+  }
+  .tech_projects p {
+    font-size: 16px;
+    color: black;
+  }
