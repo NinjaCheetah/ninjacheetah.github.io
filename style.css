@@ -147,8 +147,10 @@
     font-size: 18px;
     color: blue;
     text-decoration: none;
+    display: block;
   }
   .skin_downloads a:visited {
     color: blue;
     text-decoration: none;
+    display: block;
   }
