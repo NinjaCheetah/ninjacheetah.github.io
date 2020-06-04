@@ -137,4 +137,18 @@
     text-align: center;
     font-size: 32px;
   }
-  
+  .skin_downloads h1 {
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size: 24px;
+    text-align: center;
+  }
+  .skin_downloads a {
+    text-align: center;
+    font-size: 18px;
+    color: blue;
+    text-decoration: none;
+  }
+  .skin_downloads a:visited {
+    color: blue;
+    text-decoration: none;
+  }
