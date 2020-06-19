@@ -176,3 +176,9 @@
     font-size: 20px;
     color: black;
   }
+  .tech_projects ul {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    list-style-position: inside;
+  }
