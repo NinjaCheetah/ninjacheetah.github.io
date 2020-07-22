@@ -182,3 +182,9 @@
     color: black;
     list-style-position: inside;
   }
+  .ncxnews h2 {
+    text-align: center;
+    color: black;
+    font-family: 'Baloo Paaji 2', cursive;
+    display: block;
+  }
