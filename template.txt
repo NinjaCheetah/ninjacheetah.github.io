@@ -16,7 +16,7 @@
                         <li><a href="/series">Series</a></li>
                         <li><a href="/aboutme">About Me</a></li>
                         <li><a href="/downloads">Downloads</a></li>
-                        <li><a href="techprojects/">My Projects</a></li>
+                        <li><a href="/techprojects">My Projects</a></li>
                     </ul>
                 </nav>
             </div>
