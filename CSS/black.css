@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+  }
+  a {
+    color: aqua;
+  }
+  h1, h2, h3, h4, p, ul {
+      margin-left: 8px;
+      margin-right: 8px;
+      color: white;
+  }
+  .nav ul {
+    background-color: #212121;
+  }
+  footer {
+    color: white;
+  }
+  .footer a {
+    color: aqua;
+  }
+  ol {
+    color: white;
+  }
+  code {
+    background-color: #2E2E2E;
+    color: #00FF00;
+  }
+  .dropdown-content {
+    background-color: #212121;
+  }
+  .dropdown-content a {
+    color: white;
+  }
+  .dropdown-content a:hover {
+    background-color: #111;
+  }
+  

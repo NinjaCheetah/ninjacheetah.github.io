@@ -1,1 +1,9 @@
-theme: jekyll-theme-cayman
+name: NinjaCheetah's Site
+title: NinjaCheetah's Site
+url: https://ninjacheetah.github.io
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+feed:
+  posts_limit: 20
