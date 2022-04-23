@@ -1,9 +1,22 @@
 ---
-title: AutoMod
-layout: default
+title: AutoMod/automod-rewrite
+layout: program
+custicon: true
+iconurl: https://cdn.ncxprogramming.com/file/icon/automod.png
+author: NinjaCheetah
+platform: Windows
+archived: true
 ---
 
-<h1>AutoMod</h1>
-<a href="https://github.com/NinjaCheetah/automod">GitHub Page</a>
-<h1>Available through NCX-Installer: Yes</h1>
-<p>AutoMod is an application that installs a specific set of Minecraft mods I (will) use on my YouTube channel with my collaborators. It is currently a BATCH script that uses cURL to download a .rar archive from Dropbox that contains the mods. It then uses WinRAR (x64 only) and extracts it to the .minecraft/mods folder, before deleting the archive. I am currently working on a re-write of the program in C# using the .NET Framework. It will feature a full GUI and possibly more customization to the installation. The list of mods that it installs is available on the Wiki. Like every other program I've made, it's completely open source and all of the source code is available on the GitHub page. If you encounter any bugs while using the program, report them on the Issues page.</p>
+<h2>About</h2>
+<h3>AutoMod</h3>
+<p>AutoMod was an application that installs a specific set of Minecraft mods I used on my YouTube channel with my friends.</p>
+<p>It started as a BATCH script that used cURL to download a .rar archive from MediaFire (later Dropbox, followed by GitHub) that contains the set of mods. It then used WinRAR to extract it to the <code>.minecraft/mods</code> folder, before deleting the archive.</p>
+<h3>automod-rewrite</h3>
+<p>I later re-wrote of the program in C# using the .NET Framework. It featured a GUI making it much friendlier to use, along with some graphics I'd rather forget. Instead of a .rar archive it just used a .zip so that it could be extracted through the standard Windows libraries. This version only saw 2 releases, v1.0.0 and v1.1.0, before I pulled the plug.</p>
+<p>Like every other program I've made, both the original and the rewrite were completely open source and all of the source code was available on the GitHub page.</p>
+<h2>Shutdown</h2>
+<p>I made the decision to take down the repositories and all of the downloads because there were possible legal issues with what I was doing. A lot of mod creators don't want you to redistribute their mods in modpacks (unless they say otherwise), and on top of that the list of mods was often inaccurate, not easy to find, and lacked proper crediting.</p>
+<h3>Revisiting the Idea</h3>
+<p>In late 2020/early 2021 I revisted the idea one last time for my friends to make coordinating the mods we needed for my modded server easier. This version was not called AutoMod and was completely remade from scratch, and was never publically distributed. This was the most advanced version I ever made, featuring the ability to back up your previous mods before deleting them and installing the new ones.</p>
+<p>While this project never saw any use outside of my friends, it did lay the groundwork for NCX-Core, thanks to its download and file management operations.</p>

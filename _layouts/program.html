@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+{% if page.archived == true %}
+<image src="https://cdn.ncxprogramming.com/file/image/banner/archived.svg" class="projectimg" style="width:80%;">
+{% endif %}
+<image src="{{ page.iconurl }}" class="projectimg" style="width:256px;height:256px;padding-top:8px;">
+<div class="centertext">
+  <h1>{{ page.title }}</h1>
+  <p><b>By {{ page.author }}</b></p>
+  <p><b>Platform(s): </b>{{ page.platform }}</p>
+
+  {{ content }}
+</div>
