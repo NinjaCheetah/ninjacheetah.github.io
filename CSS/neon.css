@@ -1,0 +1,49 @@
+body {
+    background-color: #231B30;
+  }
+  a {
+    color: aqua;
+    text-shadow:
+    0 0 5px #fff,
+    0 0 7px #fff,
+    0 0 12px #0fa,
+    0 0 20px #0fa,
+    0 0 36px #0fa;
+  }
+  h1, h2, h3 {
+    color: #fff;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 7px #fff,
+        0 0 12px #FFF8CD,
+        0 0 36px #FFF8CD;
+  }
+  h4, p, ul {
+      color: #fff;
+  }
+  .nav ul {
+    background-color: #171521;
+  }
+  footer {
+    color: #fff;
+  }
+  .footer a {
+    color: aqua;
+  }
+  ol {
+    color: white;
+  }
+  code {
+    background-color: #252336;
+    color: #7EEEB0;
+  }
+  .dropdown-content {
+    background-color: #171521;
+  }
+  .dropdown-content a {
+    color: white;
+  }
+  .dropdown-content a:hover {
+    background-color: #111;
+  }
+  

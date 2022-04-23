@@ -61,7 +61,7 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, p, ul {
     margin-left: 8px;
     margin-right: 8px;
 }
@@ -70,6 +70,18 @@ code {
   color: black;
   background-color: #dedede;
   padding: 2px;
+}
+.neonWhite {
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #FFF08D,
+      0 0 82px #FFF08D,
+      0 0 92px #FFF08D,
+      0 0 102px #FFF08D,
+      0 0 151px #FFF08D;
 }
 .neonText {
   font-family: "Vibur", sans-serif;

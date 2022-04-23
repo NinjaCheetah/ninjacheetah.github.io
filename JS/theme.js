@@ -5,6 +5,7 @@ window.onload = function() {
     var roseButton = document.getElementById("roseTheme");
     var darkButton = document.getElementById("darkTheme");
     var blackButton = document.getElementById("blackTheme");
+    var neonButton = document.getElementById("neonTheme");
 
     lightButton.onclick = function() {
         chooseTheme("");
@@ -23,6 +24,11 @@ window.onload = function() {
 
     blackButton.onclick = function() {
         chooseTheme("/CSS/black.css");
+        return false;
+    }
+
+    neonButton.onclick = function() {
+        chooseTheme("/CSS/neon.css");
         return false;
     }
 }
