@@ -1,20 +1,13 @@
-if (window.addEventListener) // W3C standard
-{
-  window.addEventListener('load', themeButtons, false);
-} 
-else if (window.attachEvent) // Microsoft
-{
-  window.attachEvent('onload', themeButtons);
-}
+window.addEventListener('load', themeButtons, false);
 
 function themeButtons() {
     showTheme();
 
-    var lightButton = document.getElementById("lightTheme");
-    var roseButton = document.getElementById("roseTheme");
-    var darkButton = document.getElementById("darkTheme");
-    var blackButton = document.getElementById("blackTheme");
-    var neonButton = document.getElementById("neonTheme");
+    let lightButton = document.getElementById("lightTheme");
+    let roseButton = document.getElementById("roseTheme");
+    let darkButton = document.getElementById("darkTheme");
+    let blackButton = document.getElementById("blackTheme");
+    let neonButton = document.getElementById("neonTheme");
 
     lightButton.onclick = function() {
         chooseTheme("");
@@ -45,8 +38,7 @@ function swapStyleSheet(sheet) {
     document.getElementById("pagestyle").setAttribute("href", sheet);
 }
 function getTheme(){
-    var value = localStorage.getItem('theme');
-    return value;
+    return localStorage.getItem('theme');
 }
 function setTheme(theme){
     localStorage.setItem('theme', theme);

@@ -1,17 +1,8 @@
-if (window.addEventListener) // W3C standard
-{
-  window.addEventListener('load', setFooterDate, false);
-} 
-else if (window.attachEvent) // Microsoft
-{
-  window.attachEvent('onload', setFooterDate);
-}
+window.addEventListener('load', setFooterDate, false);
 
 function setFooterDate() {
-    var footerDate = document.getElementById("footerDate");
+    let footerDate = document.getElementById("footerDate");
     let date = new Date().getFullYear();
 
-    footerDate.textContent = date;
-    
-    return;
+    footerDate.textContent = date.toString();
 }
