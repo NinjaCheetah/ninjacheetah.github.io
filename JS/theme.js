@@ -1,5 +1,14 @@
-window.onload = function() {
-    showTheme()
+if (window.addEventListener) // W3C standard
+{
+  window.addEventListener('load', themeButtons, false);
+} 
+else if (window.attachEvent) // Microsoft
+{
+  window.attachEvent('onload', themeButtons);
+}
+
+function themeButtons() {
+    showTheme();
 
     var lightButton = document.getElementById("lightTheme");
     var roseButton = document.getElementById("roseTheme");
@@ -32,7 +41,6 @@ window.onload = function() {
         return false;
     }
 }
-
 function swapStyleSheet(sheet) {
     document.getElementById("pagestyle").setAttribute("href", sheet);
 }
