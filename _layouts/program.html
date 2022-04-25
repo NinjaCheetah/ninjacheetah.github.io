@@ -3,13 +3,14 @@ layout: default
 ---
 
 {% if page.archived == true %}
-<image src="https://cdn.ncxprogramming.com/file/image/banner/archived.svg" class="projectimg" style="width:80%;">
+<img src="https://cdn.ncxprogramming.com/file/image/banner/archived.svg" class="projectimg" style="width:80%;" alt="A banner showing that this project is archived.">
 {% endif %}
-<image src="{{ page.iconurl }}" class="projectimg" style="width:256px;height:256px;padding-top:8px;">
+<img src="{{ page.iconurl }}" class="projectimg" style="width:256px;height:256px;padding-top:8px;" alt="The icon for {{ page.title }}.">
 <div class="centertext">
   <h1>{{ page.title }}</h1>
   <p><b>By {{ page.author }}</b></p>
   <p><b>Platform(s): </b>{{ page.platform }}</p>
+  <p><b>Written in: </b>{{ page.language }}</p>
 
   {{ content }}
 </div>
