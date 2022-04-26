@@ -1,6 +1,109 @@
 ---
 title: About Me
-layout: default
+layout: nofooter
 ---
 
-<h1>I am robot.</h1>
+<script>
+    window.addEventListener('load', checkAboutMeButtons, false);
+
+    function checkAboutMeButtons() {
+        let getPersonalInfo = document.getElementById("getPersonalInfo");
+        let getDeveloperInfo = document.getElementById("getDeveloperInfo");
+
+        getPersonalInfo.onclick = function() {
+            // Set title
+            let aboutMeTitle = document.getElementById("aboutMeTitle");
+            aboutMeTitle.innerHTML = "<code>struct personalInfo</code>";
+
+            document.getElementById("aboutMeButtons").remove();
+            const div = document.createElement('div');
+            div.innerHTML = `
+                <p><code>reload to abort execution</code></p>
+                <img src="https://cdn.ncxprogramming.com/file/image/profile/NinjaCheetah.png" width=256 height=256 class="projectimg">
+                <h1>Hey there!</h1>
+                <p>I'm NinjaCheetah, and I'm still procrastinating writing this part. Reload the page and check out the other part while you wait.</p>
+            `;
+            document.getElementById("centertext").appendChild(div);
+
+            // Fade in text
+            aboutMeTitle.style.opacity = 0;
+            setInterval(show, 75);
+            function show() {
+                let opacity;
+                let intervalID = 0;
+                let textToAppear = document.getElementById("centertext");
+                opacity = Number(window.getComputedStyle(textToAppear).getPropertyValue("opacity"));
+                if (opacity < 1) {
+                    opacity += 0.1;
+                    textToAppear.style.opacity = opacity;
+                    aboutMeTitle.style.opacity = opacity;
+                } else {
+                    clearInterval(intervalID);
+                }
+            }
+            return false;
+        }
+
+        getDeveloperInfo.onclick = function() {
+            // Set title
+            let aboutMeTitle = document.getElementById("aboutMeTitle");
+            aboutMeTitle.innerHTML = "<code>struct developerInfo</code>";
+
+            document.getElementById("aboutMeButtons").remove();
+            const div = document.createElement('div');
+            div.innerHTML = `
+                <p><code>reload to abort execution</code></p>
+                <img src="https://cdn.ncxprogramming.com/file/image/profile/NinjaCheetah.png" width=256 height=256 class="projectimg">
+                <h2><code>print("Hello, world!");</code></h2>
+                <p>I'm NinjaCheetah, a jack of all trades, master of none developer. I've tried many languages and other skills but have never quite excelled at any of them. Either way, I still find software and web development fun, most of the time.</p>
+                <p><b>Languages I've Used</b></p>
+                <ul style="list-style-position: inside;">
+                    <li>C# (Previously)</li>
+                    <li>C</li>
+                    <li>Swift</li>
+                    <li>Python (Minimally)</li>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <p><b>Frameworks I've Used</b></p>
+                <ul style="list-style-position: inside;">
+                    <li>WinForms (Previously)</li>
+                    <li>WPF (Previously)</li>
+                    <li>iOS Storyboards (Minimally)</li>
+                    <li>SwiftUI</li>
+                    <li>swift-cross-ui (Minimally)</li>
+                </ul>
+                <p>I'm endlessly trying to improve my skills, both backend and frotend wise. This website (really this page specifically) is where I plan to try new UI styles and test my JavaScript skills. My macOS/iOS/watchOS app <a href="https://github.com/NCX-Programming/RNGTool">RNGTool</a> is what I'm using to try and learn Swift and SwiftUI. In fact, a lot of the public programs I've created were originally made for me to test out my skills with a language or framework. Someday I'd like to actually take those skills and make something people will use with them.</p>
+            `;
+            document.getElementById("centertext").appendChild(div);
+
+            // Fade in text
+            aboutMeTitle.style.opacity = 0;
+            setInterval(show, 75);
+            function show() {
+                let opacity;
+                let intervalID = 0;
+                let textToAppear = document.getElementById("centertext");
+                opacity = Number(window.getComputedStyle(textToAppear).getPropertyValue("opacity"));
+                if (opacity < 1) {
+                    opacity += 0.1;
+                    textToAppear.style.opacity = opacity;
+                    aboutMeTitle.style.opacity = opacity;
+                } else {
+                    clearInterval(intervalID);
+                }
+            }
+            return false;
+        }
+    }
+</script>
+<div class="centertext">
+    <h1 id="aboutMeTitle"><code>awaiting input</code></h1>
+    <div id="aboutMeButtons">
+        <p><code><a href="" id="getPersonalInfo">ninjacheetah.getPersonalInfo()</a></code></p>
+        <p><code><a href="" id="getDeveloperInfo">ninjacheetah.getDeveloperInfo()</a></code></p>
+    </div>
+</div>
+<div class="centertext" id="centertext" style="opacity: 0;">
+
+</div>

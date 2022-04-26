@@ -4,6 +4,9 @@
     <title>{{ page.title }} | {{ site.title }}</title>
     <link rel="icon" type="image/png" href="/icon.png"/>
     <link rel="stylesheet" type="text/css" href="/CSS/style.css">
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="">
+    <link rel="alternate" type="application/atom+xml" href="https://ninjacheetah.github.io/feed.xml">
+    <script src="/JS/theme.js"></script>
     {% if page.title == "Home" %}
       <meta property="og:title" content="Welcome">
     {% else %}
@@ -22,6 +25,7 @@
     {% endif %}
   </head>
   <body>
+    {% include nav.html %}
     {{ content }}
   </body>
 </html>
