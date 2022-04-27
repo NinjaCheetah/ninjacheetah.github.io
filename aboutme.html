@@ -18,15 +18,15 @@ layout: nofooter
             document.getElementById("aboutMeButtons").remove();
             const div = document.createElement('div');
             div.innerHTML = `
-                <p><code>reload to abort execution</code></p>
-                <img src="https://cdn.ncxprogramming.com/file/image/profile/NinjaCheetah.png" width=256 height=256 class="projectimg">
+                <p><code><a href="" onclick="window.location.reload()">abort execution</a></code></p>
+                <img src="https://cdn.ncxprogramming.com/file/image/profile/NinjaCheetah.png" width=256 height=256 class="projectimg" alt="My profile picture.">
                 <h1>Hey there!</h1>
                 <p>I'm NinjaCheetah, and I'm still procrastinating writing this part. Reload the page and check out the other part while you wait.</p>
             `;
             document.getElementById("centertext").appendChild(div);
 
             // Fade in text
-            aboutMeTitle.style.opacity = 0;
+            aboutMeTitle.style.opacity = "0";
             setInterval(show, 75);
             function show() {
                 let opacity;
@@ -52,8 +52,8 @@ layout: nofooter
             document.getElementById("aboutMeButtons").remove();
             const div = document.createElement('div');
             div.innerHTML = `
-                <p><code>reload to abort execution</code></p>
-                <img src="https://cdn.ncxprogramming.com/file/image/profile/NinjaCheetah.png" width=256 height=256 class="projectimg">
+                <p><code><a href="" onclick="window.location.reload()">abort execution</a></code></p>
+                <img src="https://cdn.ncxprogramming.com/file/image/profile/NinjaCheetah.png" width=256 height=256 class="projectimg" alt="My profile picture.">
                 <h2><code>print("Hello, world!");</code></h2>
                 <p>I'm NinjaCheetah, a jack of all trades, master of none developer. I've tried many languages and other skills but have never quite excelled at any of them. Either way, I still find software and web development fun, most of the time.</p>
                 <p><b>Languages I've Used</b></p>
@@ -78,7 +78,7 @@ layout: nofooter
             document.getElementById("centertext").appendChild(div);
 
             // Fade in text
-            aboutMeTitle.style.opacity = 0;
+            aboutMeTitle.style.opacity = "0";
             setInterval(show, 75);
             function show() {
                 let opacity;
