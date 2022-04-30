@@ -1,0 +1,8 @@
+- name: fakeapt
+  truename: fake-apt
+  icon: https://cdn.ncxprogramming.com/file/icon/placeholder.svg
+  desc: My fake version of APT that pretends to do various APT things.
+- name: mywebsite
+  truename: This Website
+  icon: https://cdn.ncxprogramming.com/file/icon/placeholder.svg
+  desc: The thing you're currently looking at.

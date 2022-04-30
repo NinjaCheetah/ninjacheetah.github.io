@@ -6,24 +6,60 @@ layout: default
 <script src="/projects/index.js"></script>
 <div id="projectList">
     <div class="banner">
-        <img class="banner-image" src="/files/banner/projects.svg" alt="an awesome banner. too bad it isn't loading for you :(">
+        <img class="banner-image" src="/assets/banner/projects.svg" alt="an awesome banner. too bad it isn't loading for you :(">
     </div>
     <noscript><h2>this page needs JavaScript to work</h2></noscript>
-    <h1>things i've made.</h1>
-    <p>Maintained</p>
-    <ul>
-        <li><a href='javascript:fadeToPage("fakeapt")'>fake-apt</a>, my fake version of APT that pretends to do various APT things.</li>
-        <li><a href='javascript:fadeToPage("mywebsite")'>This Website</a>, the thing you're currently looking at.</li>
-    </ul>
-    <p>Archived</p>
-    <ul>
-        <li><a href='javascript:fadeToPage("automod")'>AutoMod/automod-rewrite</a>, my legally questionable modpack installer.</li>
-        <li><a href='javascript:fadeToPage("c-ref")'>c-ref</a>, the start of a user-friendly reference guide for the C language.</li>
-        <li><a href='javascript:fadeToPage("visualbasiccollection")'>VisualBasic-Collection-Vol.1</a>, a demo program I made in VisualBasic.</li>
-    </ul>
-    <h1>things i've contributed to.</h1>
-    <ul>
-        <li><a href="https://github.com/stackotter/swift-cross-ui" target="_blank">swift-cross-ui</a> by <a href="https://github.com/stackotter">stackotter</a>, a SwiftUI-esque wrapper for SwiftGtk.</li>
-        <li><a href="https://github.com/revoltchat/desktop" target="_blank">desktop</a> by <a href="https://github.com/revoltchat">revoltchat</a>, the desktop app for the Revolt chat platform.</li>
-    </ul>
+    <h1 class="text-center">things i've made.</h1>
+    <h5 class="text-center">Maintained</h5>
+    <div class="container">
+        <div class="row">
+            {% for item in site.data.projects-maintained %}
+            <div class="col-sm-3">
+                <div class="card">
+                    <img src="{{ item.icon }}" class="card-img-top" alt="The app's icon.">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ item.truename }}</h5>
+                        <p class="card-text">{{ item.desc }}</p>
+                        <a href="/projects/{{ item.name }}" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <h5 class="text-center">Archived</h5>
+    <div class="container">
+        <div class="row">
+            {% for item in site.data.projects-archived %}
+            <div class="col-sm-3">
+                <div class="card">
+                    <img src="{{ item.icon }}" class="card-img-top" alt="The app's icon.">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ item.truename }}</h5>
+                        <p class="card-text">{{ item.desc }}</p>
+                        <a href="/projects/{{ item.name }}" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <h1 class="text-center">things i've contributed to.</h1>
+    <div class="container" style="padding-bottom: 2rem">
+        <div class="row">
+            {% for item in site.data.projects-contributed %}
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ item.truename }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ item.author }}</h6>
+                        <p class="card-text">{{ item.desc }}</p>
+                        <a href="https://github.com/{{ item.author }}/{{ item.name }}" class="btn btn-primary">Source</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>
+

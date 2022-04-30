@@ -7,3 +7,7 @@ plugins:
   - jekyll-seo-tag
 feed:
   posts_limit: 20
+sass:
+  load_paths:
+    - assets/css
+    - assets/bootstrap/css
