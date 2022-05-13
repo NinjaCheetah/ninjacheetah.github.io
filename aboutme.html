@@ -13,7 +13,7 @@ layout: nofooter
         getPersonalInfo.onclick = function() {
             // Set title
             let aboutMeTitle = document.getElementById("aboutMeTitle");
-            aboutMeTitle.innerHTML = "<code>struct personalInfo</code>";
+            aboutMeTitle.innerHTML = '<code>struct personalInfo</code><code class="blink">|</code>';
 
             document.getElementById("aboutMeButtons").remove();
             const div = document.createElement('div');
@@ -47,7 +47,7 @@ layout: nofooter
         getDeveloperInfo.onclick = function() {
             // Set title
             let aboutMeTitle = document.getElementById("aboutMeTitle");
-            aboutMeTitle.innerHTML = "<code>struct developerInfo</code>";
+            aboutMeTitle.innerHTML = '<code>struct developerInfo</code><code class="blink">|</code>';
 
             document.getElementById("aboutMeButtons").remove();
             const div = document.createElement('div');
@@ -98,15 +98,44 @@ layout: nofooter
     }
 </script>
 <noscript>
-    <h1 class="centertext">You have JavaScript disabled! This page won't work without it. Sorry.</h1>
+    <h1 class="text-center">You have JavaScript disabled! This page won't work without it. Sorry.</h1>
 </noscript>
-<div class="centertext">
-    <h1 id="aboutMeTitle"><code>awaiting input</code></h1>
+<style>
+    body {
+        background-color: black;
+    }
+    a {
+        color: aqua;
+    }
+    ol {
+        color: white;
+    }
+    code {
+        background-color: black;
+        color: #00FF00;
+    }
+    .blink {
+        animation: blink 1s steps(1, end) infinite;
+    }
+    @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+<div class="text-center">
+    <h1 id="aboutMeTitle"><code>awaiting input</code><code class="blink">|</code></h1>
     <div id="aboutMeButtons">
         <p><code><a href="" id="getPersonalInfo">ninjacheetah.getPersonalInfo()</a></code></p>
         <p><code><a href="" id="getDeveloperInfo">ninjacheetah.getDeveloperInfo()</a></code></p>
     </div>
 </div>
-<div class="centertext" id="centertext" style="opacity: 0;">
+<div class="text-center text-white" id="centertext" style="opacity: 0;">
 
 </div>
