@@ -3,6 +3,6 @@
   author: stackotter
   desc: A SwiftUI-esque wrapper for SwiftGtk.
 - name: desktop
-  truename: c-ref
+  truename: desktop
   author: revoltchat
   desc: The desktop app for the Revolt chat platform.
