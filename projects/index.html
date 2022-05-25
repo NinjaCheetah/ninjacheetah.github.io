@@ -9,56 +9,71 @@ layout: default
         <img class="banner-image" src="/assets/banner/projects.svg" alt="an awesome banner. too bad it isn't loading for you :(">
     </div>
     <noscript><h2>this page needs JavaScript to work</h2></noscript>
-    <h1 class="text-center">things i've made.</h1>
-    <h5 class="text-center">Maintained</h5>
-    <div class="container">
-        <div class="row">
-            {% for item in site.data.projects-maintained %}
-            <div class="col-sm-3">
-                <div class="card">
-                    <img src="{{ item.icon }}" class="card-img-top" alt="The app's icon.">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ item.truename }}</h5>
-                        <p class="card-text">{{ item.desc }}</p>
-                        <a href="/projects/{{ item.name }}" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
+    <h1 class="text-center">things i've worked on.</h1>
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Maintained</button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Archived</button>
+            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contributions</button>
         </div>
-    </div>
-    <h5 class="text-center">Archived</h5>
-    <div class="container">
-        <div class="row">
-            {% for item in site.data.projects-archived %}
-            <div class="col-sm-3">
-                <div class="card">
-                    <img src="{{ item.icon }}" class="card-img-top" alt="The app's icon.">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ item.truename }}</h5>
-                        <p class="card-text">{{ item.desc }}</p>
-                        <a href="/projects/{{ item.name }}" class="btn btn-primary">Read More</a>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <h3 class="text-center">Maintained</h3>
+            <div class="container">
+                <div class="row">
+                    {% for item in site.data.projects-maintained %}
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <img src="{{ item.icon }}" class="card-img-top" alt="The app's icon.">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ item.truename }}</h5>
+                                <p class="card-text">{{ item.desc }}</p>
+                                <a href="/projects/maintained/{{ item.name }}" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
                     </div>
+                    {% endfor %}
                 </div>
             </div>
-            {% endfor %}
         </div>
-    </div>
-    <h1 class="text-center">things i've contributed to.</h1>
-    <div class="container" style="padding-bottom: 2rem">
-        <div class="row">
-            {% for item in site.data.projects-contributed %}
-            <div class="col-sm-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ item.truename }}</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">{{ item.author }}</h6>
-                        <p class="card-text">{{ item.desc }}</p>
-                        <a href="https://github.com/{{ item.author }}/{{ item.name }}" class="btn btn-primary">Source</a>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <h3 class="text-center">Archived</h3>
+            <div class="container">
+                <div class="row">
+                    {% for item in site.data.projects-archived %}
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <img src="{{ item.icon }}" class="card-img-top" alt="The app's icon.">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ item.truename }}</h5>
+                                <p class="card-text">{{ item.desc }}</p>
+                                <a href="/projects/archived/{{ item.name }}" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
                     </div>
+                    {% endfor %}
                 </div>
             </div>
-            {% endfor %}
+        </div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <h3 class="text-center">Contributions</h3>
+            <div class="container" style="padding-bottom: 2rem">
+                <div class="row">
+                    {% for item in site.data.projects-contributed %}
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ item.truename }}</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">{{ item.author }}</h6>
+                                <p class="card-text">{{ item.desc }}</p>
+                                <a href="https://github.com/{{ item.author }}/{{ item.name }}" class="btn btn-primary">Source</a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
     </div>
 </div>
