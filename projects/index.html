@@ -9,7 +9,7 @@ layout: default
         <img class="banner-image" src="/assets/banner/projects.svg" alt="an awesome banner. too bad it isn't loading for you :(">
     </div>
     <noscript><h2>this page needs JavaScript to work</h2></noscript>
-    <h1 class="text-center">things i've worked on.</h1>
+    <h1 class="text-center pt-3">things i've worked on.</h1>
     <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
             <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Maintained</button>
@@ -19,7 +19,7 @@ layout: default
     </nav>
     <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-            <h3 class="text-center">Maintained</h3>
+            <h3 class="text-center pt-3 pb-1">Maintained</h3>
             <div class="container">
                 <div class="row">
                     {% for item in site.data.projects-maintained %}
@@ -38,7 +38,7 @@ layout: default
             </div>
         </div>
         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-            <h3 class="text-center">Archived</h3>
+            <h3 class="text-center pt-3 pb-1">Archived</h3>
             <div class="container">
                 <div class="row">
                     {% for item in site.data.projects-archived %}
@@ -57,7 +57,7 @@ layout: default
             </div>
         </div>
         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-            <h3 class="text-center">Contributions</h3>
+            <h3 class="text-center pt-3 pb-1">Contributions</h3>
             <div class="container" style="padding-bottom: 2rem">
                 <div class="row">
                     {% for item in site.data.projects-contributed %}
