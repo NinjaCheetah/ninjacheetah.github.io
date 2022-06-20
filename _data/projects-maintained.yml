@@ -1,3 +1,7 @@
+- name: ahcounter
+  truename: Ah Counter
+  icon: https://cdn.ncxprogramming.com/file/icon/ahcounter.png
+  desc: A Discord bot that counts words.
 - name: fakeapt
   truename: fake-apt
   icon: https://cdn.ncxprogramming.com/file/icon/placeholder.svg
