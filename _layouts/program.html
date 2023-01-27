@@ -4,7 +4,9 @@ layout: default
 
 <div class="container text-center pb-3" id="projectPage">
   {% if page.archived == true %}
-  <img src="https://cdn.ncxprogramming.com/file/image/banner/archived.svg" class="projectimg" style="width:80%;" alt="A banner showing that this project is archived.">
+  <div class="alert alert-warning" role="alert">
+    <span class="badge bg-warning text-dark">Important</span> This project is no longer maintained and does not recieve updates.
+  </div>
   {% endif %}
   <img src="{{ page.iconurl }}" class="projectimg" style="width:256px;height:256px;padding-top:8px;" alt="The icon for {{ page.title }}.">
   <h1>{{ page.title }}</h1>
