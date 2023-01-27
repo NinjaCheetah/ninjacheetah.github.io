@@ -17,6 +17,8 @@
 	"remoteUser": "vscode",
 	"features": {
 		"ghcr.io/devcontainers/features/github-cli:1": {},
-		"ghcr.io/devcontainers/features/ruby": {}
+		"ghcr.io/devcontainers/features/ruby": {
+			"version": "3.1.2"
+		}
 	}
 }
