@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 # gem "rails"
 
-gem "jekyll", "~> 4.2"
+gem "jekyll", ">= 4.3"
 
 group :jekyll_plugins do
   gem 'jekyll-sitemap'
@@ -12,4 +12,8 @@ group :jekyll_plugins do
   gem 'jekyll-seo-tag'
 end
 
-gem "webrick", "~> 1.7"
+gem "json"
+gem "csv"
+gem "base64"
+gem "bigdecimal"
+gem "webrick", ">= 1.8"

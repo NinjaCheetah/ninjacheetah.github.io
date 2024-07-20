@@ -1,23 +1,68 @@
 ---
 title: Home
-layout: default
 ---
 
-<img class="img-fluid" src="/assets/banner/homepage.svg" alt="an awesome banner. too bad it isn't loading for you :(">
-<div class="container text-center pt-3">
-    <h1>Welcome to my site!</h1>
-    <hr>
-    <div class="alert alert-success" role="alert">
-        <span class="badge bg-success">New</span> Thanks to the Bootstrap v5.3 Alpha, this site, and <a href="https://ncxprogramming.com">ncxprogramming.com</a>, now have built-in dark themes!
+<link rel="preconnect" href="https://rsms.me/">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+<style>
+    :root {
+        font-family: Inter, sans-serif;
+        font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+    }
+    @supports (font-variation-settings: normal) {
+        :root { font-family: InterVariable, sans-serif; }
+    }
+    .index-gradient {
+        background: linear-gradient(140deg, #ff5555, #ffaa56, #ffe660, #76ff7b, #407fff, #b74dff);
+        background-size: 1400% 1400%;
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        border-color: transparent;
+
+        -webkit-animation: AnimationName 15s ease infinite;
+        -moz-animation: AnimationName 15s ease infinite;
+        animation: AnimationName 15s ease infinite;
+    }
+
+    @-webkit-keyframes AnimationName {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    .index-text div {
+        display: table;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    .index-text p {
+        display: table-cell;
+        vertical-align: middle;
+    }
+</style>
+<body class="index-gradient" style="height: 100%;">
+    <div class="index-text">
+        <div>
+            <p>
+                <span style="font-weight: 700; font-size: 96px;">be right back<span style="color: white;">.</span></span>
+                <br>
+                <span style="font-weight: 500; font-size: 64px;">a new ninjacheetah<span style="color: white;">.</span>dev is in the works</span>
+                <br style="margin-bottom: 6em;">
+                <span style="font-weight: 300; font-size: 32px;">ended up here while looking for libWiiPy? you'll probably want <a href="https://ninjacheetah.github.io/libWiiPy/" style="color: white; font-weight: 500;">these API docs</a></span>
+                <br>
+                <br>
+                <span style="font-weight: 300; font-size: 32px;">you can also peek behind the curtain and <a href="/index_old" style="color: white; font-weight: 500;">see what once was</a></span>
+            </p>
+        </div>
     </div>
-    <div class="alert alert-success" role="alert">
-        <span class="badge bg-success">New</span> Check out my <a href="/graphics/">graphic design portfolio</a> to see what graphics I've worked on
-    </div>
-    <div class="alert alert-primary" role="alert">
-        <span class="badge bg-primary">Update</span> I recently updated <a href="/projects/maintained/fakeapt">fake-apt</a> to the point where it has all of APT's basic features available.
-    </div>
-    <div class="alert alert-primary" role="alert">
-        <span class="badge bg-primary">Update</span> I've been working on new updates to <a href="/projects/maintained/ahcounter">Ah Counter</a> like improved slash command and help menus.
-    </div>
-    <hr>
-</div>
+</body>
