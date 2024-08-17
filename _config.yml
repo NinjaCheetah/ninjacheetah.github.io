@@ -1,6 +1,6 @@
-name: NinjaCheetah's Site
-title: NinjaCheetah's Site
-url: https://ninjacheetah.github.io
+name: ninjacheetah.dev
+title: ninjacheetah.dev
+url: https://ninjacheetah.dev
 plugins:
   - jekyll-feed
   - jekyll-sitemap

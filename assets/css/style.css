@@ -1,2 +1,31 @@
 @import '/assets/bootstrap/css/bootstrap.min.css';
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+}
+
+.translucent-pill {
+    background-color: rgba(70, 70, 70, 0.6);
+    backdrop-filter: blur(1.5rem);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 35px;
+    margin: 2.5%;
+    width: 90%;
+    height: 90%;
+    padding: 30px 30px 30px 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+}
+
+.img-frame-pill {
+    background-color: rgba(70, 70, 70, 0.6);
+    backdrop-filter: blur(1.5rem);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 35px;
+    width: 90%;
+    height: 90%;
+    box-shadow: 0 4px 8px 0 rgba(50, 50, 50, 0.4), 0 6px 20px 0 rgba(50, 50, 50, 0.39);
+}

@@ -1,0 +1,72 @@
+---
+title: Home
+layout: base
+---
+
+<style>
+    body {
+        background-size: 500% 500%;
+        background-position: 0 0, 0 0, 0 0, 0 0, 0 0;
+        background-image: repeating-linear-gradient(315deg, #00FFFF2E 92%, #073AFF00 100%),repeating-radial-gradient(75% 75% at 238% 218%, #00FFFF12 30%, #073AFF14 39%),radial-gradient(99% 99% at 109% 2%, #00C9FFFF 17%, #073AFF00 100%),radial-gradient(99% 99% at 21% 78%, #7B00FFFF 35%, #073AFF00 100%),radial-gradient(160% 154% at 711px -303px, #7A00FFFF 19%, #2A07FFFF 100%);        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        border-color: transparent;
+
+        -webkit-animation: HomeAnimation 50s ease infinite;
+        -moz-animation: HomeAnimation 50s ease infinite;
+        animation: HomeAnimation 50s ease infinite;
+    }
+
+    @-webkit-keyframes HomeAnimation {
+        0%{background-position:0 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0 50%}
+    }
+    @-moz-keyframes HomeAnimation {
+        0%{background-position:0 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0 50%}
+    }
+    @keyframes HomeAnimation {
+        0%{background-position:0 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0 50%}
+    }
+
+    .accent {
+        color: black;
+    }
+
+    .translucent-list {
+        --bs-list-group-bg: rgba(0, 0, 0, 0);
+        --bs-list-group-color: rgb(255, 255, 255);
+        backdrop-filter: blur(1.5rem);
+    }
+
+    a {
+        color: white;
+        font-weight: 500;
+    }
+</style>
+<body>
+<div class="container-fluid min-vh-100 text-white">
+    <div class="row align-items-center min-vh-100">
+        <div class="col translucent-pill text-center">
+            <img src="https://cdn.ncxprogramming.com/file/image/profile/NinjaCheetah.png" class="img-frame-pill" style="height: 15rem; width: 15rem" alt="A profile picture with a background made out of a pattern of repeated triangles. The text &quot;NinjaCheetah&quot; is placed over the center.">
+            <h1 style="font-weight: 500; font-size: 4em" class="mt-3 mb-3">hey there<span class="accent">.</span></h1>
+            <p style="font-weight: 300; font-size: 1.5em;">I'm NinjaCheetah, though chances are you already know who I am if you've made it this far. This site isn't quite done yet, but feel free to look around.</p>
+        </div>
+        <div class="col translucent-pill">
+            <h1 style="font-weight: 400; font-size: 2.5em">points of interest</h1>
+            <p>(you can click or tap these)</p>
+            <div class="list-group translucent-list mt-4">
+                {% for item in site.data.points-of-interest %}
+                <a href="{{ item.url }}" class="list-group-item list-group-item-action">
+                    <h5 class="mb-1" style="font-weight: 600;">{{ item.name }}</h5>
+                    <p class="mb-1" style="font-weight: 300;">{{ item.description }}</p>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+</body>

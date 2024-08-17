@@ -1,0 +1,21 @@
+- name: my blog
+  description: all of the (currently very limited) blog articles i've written (this link will be moved)
+  url: /blog
+- name: github
+  description: the place where all of the magic happens
+  url: https://github.com/NinjaCheetah
+- name: github (NCX Programming)
+  description: the place where magic used to happen
+  url: https://github.com/NCX-Programming
+- name: mastodon
+  description: where i occasionally post updates
+  url: https://mastodon.online/@NinjaCheetah
+- name: gbatemp
+  description: where i post threads about my project updates
+  url: https://gbatemp.net/members/ninjacheetah.536343/
+- name: youtube
+  description: fairly inactive but i upload videos of what im doing here sometimes
+  url: https://www.youtube.com/@ninjacheetah100
+- name: email
+  description: you can shoot me an email if you'd like
+  url: mailto:ninjacheetah100@proton.me
