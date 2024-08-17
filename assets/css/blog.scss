@@ -1,0 +1,59 @@
+@use '../bootstrap/css/bootstrap.css';
+$color-mode-type: data;
+
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
+}
+
+.top-text {
+  font-family: Inter, sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+.blog-title {
+  font-family: Inter, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: start;
+}
+
+.blog-desc {
+  font-family: Inter, sans-serif;
+  font-size: 0.80rem;
+  font-weight: 500;
+  text-align: start
+}
+
+.blog-img {
+  width: 414px;
+  height: 252px;
+  object-fit: cover;
+  object-position: 50% 0
+}
+
+.author-date {
+  font-family: Inter, sans-serif;
+  font-size: 0.65rem;
+  font-weight: 450;
+  text-align: start;
+  margin-top: -.5%;
+  margin-bottom: -3%;
+  color: rgb(120, 120, 120);
+}
+
+[data-bs-theme=light] .author-date {
+  font-family: Inter, sans-serif;
+  font-size: 0.65vw;
+  font-weight: 450;
+  text-align: start;
+  margin-bottom: -3%;
+  color: rgb(70, 70, 70);
+}
