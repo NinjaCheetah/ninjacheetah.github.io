@@ -1,6 +1,3 @@
-- name: my blog
-  description: all of the (currently very limited) blog articles i've written (this link will be moved)
-  url: /blog
 - name: github
   description: the place where all of the magic happens
   url: https://github.com/NinjaCheetah
@@ -8,7 +5,7 @@
   description: the place where magic used to happen
   url: https://github.com/NCX-Programming
 - name: mastodon
-  description: where i occasionally post updates
+  description: where i post shorter project updates and what i'm up to
   url: https://mastodon.online/@NinjaCheetah
 - name: gbatemp
   description: where i post threads about my project updates

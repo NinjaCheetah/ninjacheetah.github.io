@@ -10,14 +10,14 @@
 
 .translucent-pill {
     background-color: rgba(70, 70, 70, 0.6);
-    backdrop-filter: blur(1.5rem);
-    border: 1px solid rgb(255, 255, 255);
+    backdrop-filter: blur(1rem);
+    /*border: 1px solid rgb(255, 255, 255);*/
     border-radius: 35px;
     margin: 2.5%;
-    width: 90%;
+    width: 95%;
     height: 90%;
     padding: 30px 30px 30px 30px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 .img-frame-pill {
