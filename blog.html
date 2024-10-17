@@ -5,18 +5,16 @@ layout: base
 
 <!--Blog taken from the NCX Programming website. www.ncxprogramming.com-->
 
-<head>
-    <link rel="stylesheet" href="../assets/css/blog.css">
-    <link rel="preconnect" href="https://rsms.me/">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-</head>
+<body data-bs-theme="dark">
+<link rel="stylesheet" href="/assets/css/blog.css">
 
 {% assign years = site.posts
 | group_by_exp: "post", "post.date | date: '%Y'"
 %}
 
-<div class="text-center pt-3">
-    <h1 class="top-text">NinjaCheetah's Blog</h1>
+<div class="text-center mb-5">
+    <h1 class="top-text mb-3">blog</h1>
+    <a class="btn btn-outline-info mb-5" href="/" role="button"><i class="bi bi-arrow-return-left"></i> Back</a>
 </div>
 <div class="container">
     {% for year in years %}
@@ -27,13 +25,13 @@ layout: base
             {% if post.hidden == null %}
             <div class="card">
                 {% if post.icon == null %}
-                <img src="assets/img/blog/blog-placeholder.png" class="card-img-top blog-img">
+                <img src="assets/img/blog/blog-placeholder.png" class="card-img-top">
                 {% else %}
-                <img src="{{ post.icon }}" class="card-img-top blog-img">
+                <img src="{{ post.icon }}" class="card-img-top">
                 {% endif %}
                 <div class="card-body">
                     <h4 class="card-title text-start blog-title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
-                    <p class="author-date">{{ post.author }} - {{ post.date | date: "%Y-%m-%d" }}</p>
+                    <p class="author-date">{{ post.date | date: "%Y-%m-%d" }}</p>
                     {% if post.desc == null %}
                     <p class="card-text">{{ post.excerpt }}</p>
                     {% else %}
@@ -48,3 +46,4 @@ layout: base
     </div>
     {% endfor %}
 </div>
+</body>

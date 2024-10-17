@@ -2,13 +2,14 @@
 layout: base
 ---
 
+<body data-bs-theme="dark">
 <div class="text-center pt-3">
     <h1>{{ page.title }}</h1>
     <h3>{{ page.date | date: "%Y-%m-%d" }}</h3>
-    <h4>{{ page.author }}</h4>
-    <p><a href=/blog>&lt;- Back</a></p>
+    <a class="btn btn-outline-info" href="/blog" role="button" style="margin-top: 10px;"><i class="bi bi-arrow-return-left"></i> Back</a>
 </div>
 <div class="container">
-<hr>
-{{ content }}
+    <hr>
+    {{ content }}
 </div>
+</body>

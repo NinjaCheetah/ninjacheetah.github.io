@@ -5,112 +5,20 @@ permalink: /404.html
 ---
 
 <style>
-  a, a:hover {
-    color:#fff;
-    text-decoration :none;
-  }
-  body {
-    background-color: #000000;
-  }
-  .nav ul {
-    background-color: #000000;
-  }
-  .neonText {
-      font-family: "Vibur", sans-serif;
-      color: #fff;
-      text-shadow:
-              0 0 7px #fff,
-              0 0 10px #fff,
-              0 0 21px #fff,
-              0 0 42px #0fa,
-              0 0 82px #0fa,
-              0 0 92px #0fa,
-              0 0 102px #0fa,
-              0 0 151px #0fa;
-  }
-  @keyframes pulsate0 {
-      100% {
-          /* Larger blur radius */
-          text-shadow:
-                  0 0 4px #fff,
-                  0 0 11px #fff,
-                  0 0 19px #fff,
-                  0 0 40px #0fa,
-                  0 0 80px #0fa,
-                  0 0 90px #0fa,
-                  0 0 100px #0fa,
-                  0 0 150px #0fa;
-      }
-      0% {
-          /* A slightly smaller blur radius */
-          text-shadow:
-                  0 0 4px #fff,
-                  0 0 10px #fff,
-                  0 0 18px #fff,
-                  0 0 38px #0fa,
-                  0 0 73px #0fa,
-                  0 0 80px #0fa,
-                  0 0 94px #0fa,
-                  0 0 140px #0fa;
-      }
-  }
-
-  @keyframes pulsate1 {
-      100% {
-          /* Larger blur radius */
-          text-shadow:
-                  0 0 4px #fff,
-                  0 0 11px #fff,
-                  0 0 19px #fff,
-                  0 0 40px #0c1,
-                  0 0 80px #0c1,
-                  0 0 90px #0c1,
-                  0 0 100px #0c1,
-                  0 0 150px #0c1;
-      }
-      0% {
-          /* A slightly smaller blur radius */
-          text-shadow:
-                  0 0 4px #fff,
-                  0 0 10px #fff,
-                  0 0 18px #fff,
-                  0 0 38px #0c1,
-                  0 0 73px #0c1,
-                  0 0 80px #0c1,
-                  0 0 94px #0c1,
-                  0 0 140px #0c1;
-      }
-  }
-  @keyframes pulsate2 {
-      100% {
-          /* Larger blur radius */
-          text-shadow:
-                  0 0 4px #fff,
-                  0 0 11px #fff,
-                  0 0 19px #fff,
-                  0 0 40px #f00,
-                  0 0 80px #f00,
-                  0 0 90px #f00,
-                  0 0 100px #f00,
-                  0 0 150px #f00;
-      }
-      0% {
-          /* A slightly smaller blur radius */
-          text-shadow:
-                  0 0 4px #fff,
-                  0 0 10px #fff,
-                  0 0 18px #fff,
-                  0 0 38px #f00,
-                  0 0 73px #f00,
-                  0 0 80px #f00,
-                  0 0 94px #f00,
-                  0 0 140px #f00;
-      }
-  }
+    body {
+        background-size: 100% 100%;
+        background-position: 0 0, 0 0, 0 0, 0 0, 0 0;
+        background-image: radial-gradient(49% 81% at 45% 47%, #03E4FF52 0%, #073AFF00 100%),
+                          radial-gradient(113% 91% at 17% -2%, #00AAFFFF 1%, #FF000000 99%),
+                          radial-gradient(142% 91% at 83% 7%, #3400FFFF 1%, #FF000000 99%),
+                          radial-gradient(142% 91% at -6% 74%, #DF00FFFF 1%, #6200FF00 99%),
+                          radial-gradient(142% 91% at 111% 84%, #9D00FFFF 0%, #6600FFFF 100%);
+    }
 </style>
-<div class="text-center" style="color:#fff;">
-    <h1 style="margin-top:48px;font-size:84px;margin-bottom:0;font-weight:normal;animation: pulsate0 0.11s ease-in-out infinite alternate;">404</h1>
-    <h1 style="margin-top:0;font-weight:normal;" class="neonText">Not Found</h1>
-    <p style="animation: pulsate1 0.11s ease-in-out infinite alternate;margin-top:64px;"><a href="javascript:window.history.back()">LOAD SAVE</a></p>
-    <p style="animation: pulsate2 0.11s ease-in-out infinite alternate;margin-bottom:64px;"><a href="/">NEW GAME</a></p>
+<body>
+<div class="d-flex flex-column min-vh-100 justify-content-center align-items-center text-center">
+    <h1 style="font-size: 14vh; font-weight: 700;">404</h1>
+    <h1 style="font-size: 9vh; font-weight: 400;">not found</h1>
+    <p style="font-size: 3vh;">you seem a little lost- how about going <a href="/" style="color: var(--bs-body-color); font-weight: 550;">back home?</a></p>
 </div>
+</body>
