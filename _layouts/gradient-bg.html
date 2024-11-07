@@ -1,0 +1,43 @@
+---
+layout: base
+---
+
+<style>
+    body {
+        background-size: 500% 500%;
+        background-position: 0 0, 0 0, 0 0, 0 0, 0 0;
+        background-image: repeating-linear-gradient(315deg, #00FFFF2E 92%, #073AFF00 100%),repeating-radial-gradient(75% 75% at 238% 218%, #00FFFF12 30%, #073AFF14 39%),radial-gradient(99% 99% at 109% 2%, #00C9FFFF 17%, #073AFF00 100%),radial-gradient(99% 99% at 21% 78%, #7B00FFFF 35%, #073AFF00 100%),radial-gradient(160% 154% at 711px -303px, #7A00FFFF 19%, #2A07FFFF 100%);        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        border-color: transparent;
+
+        -webkit-animation: HomeAnimation 50s ease infinite;
+        -moz-animation: HomeAnimation 50s ease infinite;
+        animation: HomeAnimation 50s ease infinite;
+    }
+
+    @-webkit-keyframes HomeAnimation {
+        0%{background-position:0 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0 50%}
+    }
+    @-moz-keyframes HomeAnimation {
+        0%{background-position:0 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0 50%}
+    }
+    @keyframes HomeAnimation {
+        0%{background-position:0 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0 50%}
+    }
+
+    a {
+        color: white;
+        font-weight: 500;
+    }
+</style>
+<body data-bs-theme="light"> <!--this is a workaround because some people have the dark theme set from when that was an option and that breaks stuff-->
+    <div class="container-fluid min-vh-100 text-white">
+        {{ content }}
+    </div>
+</body>

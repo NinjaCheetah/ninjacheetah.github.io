@@ -11,3 +11,6 @@ sass:
   load_paths:
     - assets/css
     - assets/bootstrap/css
+collections:
+  projects:
+    output: true

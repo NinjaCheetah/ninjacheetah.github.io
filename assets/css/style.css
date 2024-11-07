@@ -20,10 +20,24 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
+.translucent-list {
+    --bs-list-group-bg: rgba(0, 0, 0, 0);
+    --bs-list-group-color: rgb(255, 255, 255);
+}
+
 .img-frame-pill {
     background-color: rgba(70, 70, 70, 0.6);
     backdrop-filter: blur(1.5rem);
     border: 1px solid rgb(255, 255, 255);
+    border-radius: 35px;
+    width: 90%;
+    height: 90%;
+    box-shadow: 0 4px 8px 0 rgba(50, 50, 50, 0.4), 0 6px 20px 0 rgba(50, 50, 50, 0.39);
+}
+
+.img-pill {
+    background-color: rgba(70, 70, 70, 0.6);
+    backdrop-filter: blur(1.5rem);
     border-radius: 35px;
     width: 90%;
     height: 90%;
