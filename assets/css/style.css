@@ -12,11 +12,23 @@
     background-color: rgba(70, 70, 70, 0.6);
     backdrop-filter: blur(1rem);
     /*border: 1px solid rgb(255, 255, 255);*/
-    border-radius: 35px;
-    margin: 2.5%;
-    width: 95%;
+    border-radius: 25px;
+    margin: 2%;
+    width: 96%;
     height: 90%;
-    padding: 30px 30px 30px 30px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.translucent-frame-pill {
+    background-color: rgba(70, 70, 70, 0.6);
+    backdrop-filter: blur(1rem);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    margin: 2%;
+    width: 96%;
+    height: 90%;
+    padding: 20px 20px 20px 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -42,4 +54,8 @@
     width: 90%;
     height: 90%;
     box-shadow: 0 4px 8px 0 rgba(50, 50, 50, 0.4), 0 6px 20px 0 rgba(50, 50, 50, 0.39);
+}
+
+code {
+    color: deeppink;
 }

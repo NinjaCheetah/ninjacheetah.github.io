@@ -2,14 +2,33 @@
 layout: base
 ---
 
-<body data-bs-theme="dark">
-<div class="text-center pt-3">
+<style>
+    body {
+        background-size: 500% 500%;
+        background-position: 0 0, 0 0, 0 0, 0 0, 0 0;
+        background-image: linear-gradient(90deg, #4F007CFF 0%, #006BACFF 100%);
+        border-color: transparent;
+
+        -webkit-animation: HomeAnimation 50s ease infinite;
+        -moz-animation: HomeAnimation 50s ease infinite;
+        animation: HomeAnimation 50s ease infinite;
+    }
+
+    a {
+        color: white;
+        font-weight: 500;
+    }
+</style>
+{% include nav.html %}
+<body data-bs-theme="light"> <!--this is a workaround because some people have the dark theme set from when that was an option and that breaks stuff-->
+<div class="text-center pt-3 text-white">
     <h1>{{ page.title }}</h1>
     <h3>{{ page.date | date: "%Y-%m-%d" }}</h3>
-    <a class="btn btn-outline-info" href="/blog" role="button" style="margin-top: 10px;"><i class="bi bi-arrow-return-left"></i> Back</a>
 </div>
 <div class="container">
-    <hr>
-    {{ content }}
+    <hr style="color: white;">
+    <div class="container-fluid min-vh-100 text-white">
+        {{ content }}
+    </div>
 </div>
 </body>

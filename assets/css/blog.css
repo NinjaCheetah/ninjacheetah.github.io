@@ -1,5 +1,3 @@
-@import '/assets/bootstrap/css/bootstrap.min.css';
-
 a {
     font-family: Inter, sans-serif;
     font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */

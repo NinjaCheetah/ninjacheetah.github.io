@@ -6,11 +6,11 @@ layout: gradient-bg
 {% include nav.html %}
 <div class="row align-items-center">
     {% for project in site.projects %}
-    <div class="col-lg-4">
+    <div class="col-lg-3">
         <a href="{{ project.url }}" style="text-decoration: none;">
-            <div class="translucent-pill text-center">
-                <img src="/assets/icons/{{ project.icon }}" class="img-pill" style="height: 15rem; width: 15rem" alt="Icon for the program {{ project.title }}">
-                <h1 style="font-weight: 500; font-size: 4em;" class="mt-3 mb-3">{{ project.title }}</h1>
+            <div class="translucent-frame-pill text-center">
+                <img src="/assets/icons/{{ project.icon }}" class="img-pill" style="height: 12rem; width: 12rem" alt="Icon for the program {{ project.title }}">
+                <h1 style="font-weight: 600; font-size: 3em;" class="mt-3 mb-3">{{ project.title }}</h1>
                 <p style="font-weight: 300; font-size: 1.5em;">{{ project.short-desc }}</p>
             </div>
         </a>
