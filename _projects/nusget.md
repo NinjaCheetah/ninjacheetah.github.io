@@ -14,9 +14,12 @@ releases:
   - name: Linux
     platform: linux
     bin: NUSGet-Linux-bin.tar.gz
-  - name: macOS
+  - name: macOS (x86_64)
     platform: macos
-    bin: NUSGet-macOS-bin.tar.gz
+    bin: NUSGet-macOS-x86_64-bin.tar.gz
+  - name: macOS (arm64)
+    platform: macos
+    bin: NUSGet-macOS-arm64-bin.tar.gz
 ---
 
 # NUSGet
