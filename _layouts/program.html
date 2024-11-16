@@ -1,26 +1,71 @@
 ---
-layout: default
+layout: base
 ---
 
-<div class="container text-center pb-3" id="projectPage">
-  {% if page.archived == true %}
-  <div class="alert alert-warning" role="alert">
-    <span class="badge bg-warning text-dark">Important</span> This project is no longer maintained and does not recieve updates.
-  </div>
-  {% endif %}
-  <img src="{{ page.iconurl }}" class="projectimg" style="width:256px;height:256px;padding-top:8px;" alt="The icon for {{ page.title }}.">
-  <h1>{{ page.title }}</h1>
-  <p><b>Platform(s): </b>{{ page.platform }}</p>
-  <p><b>Written in: </b>{{ page.language }}</p>
-  <div class="dropdown pb-3">
-    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-      Project Links
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-      {% for item in page.links %}
-      <li><a class="dropdown-item" href="{{ item.link }}">{{ item.name }}</a></li>
-      {% endfor %}
-    </ul>
-  </div>
-  {{ content }}
+<style>
+    body {
+        background-size: 500% 500%;
+        background-position: 0 0, 0 0, 0 0, 0 0, 0 0;
+        background-image: linear-gradient(90deg, #4F007CFF 0%, #006BACFF 100%);
+        border-color: transparent;
+    }
+
+    .blog-content a {
+        color: white;
+        font-weight: 500;
+    }
+</style>
+{% include nav.html %}
+<body data-bs-theme="light"> <!--this is a workaround because some people have the dark theme set from when that was an option and that breaks stuff-->
+<div class="row align-items-center min-vh-100">
+    <div class="col-lg-4">
+        <div class="translucent-frame-pill text-center">
+            <img src="/assets/icons/{{ page.icon }}" class="img-pill" style="height: auto; width: 14rem" alt="Icon for the program {{ page.title }}">
+            <h1 style="font-weight: 500; font-size: 3.5em" class="mt-2">{{ page.title }}</h1>
+            <div class="list-group list-group-horizontal translucent-list text-center mb-2" style="font-size: 1.25em;">
+                <a href="{{ page.repo }}" class="list-group-item list-group-item-action">
+                    <span style="font-weight: 600;"><i class="bi bi-github"></i> GitHub</span>
+                </a>
+                <a href="{{ page.repo }}/actions" class="list-group-item list-group-item-action">
+                    <span style="font-weight: 600;"><i class="bi bi-play-circle"></i> Actions</span>
+                </a>
+            </div>
+            <div class="list-group translucent-list text-start mb-2">
+                <a href="{{ page.repo }}/archive/refs/heads/main.zip" class="list-group-item list-group-item-action">
+                    <span style="font-weight: 600;">
+                        <i class="bi bi-file-earmark-zip"></i>
+                        Source Code
+                        <span style="float:right;">
+                            <i class="bi bi-download"></i>
+                        </span>
+                    </span>
+                </a>
+            </div>
+            <div class="list-group translucent-list text-start">
+              {% for item in page.releases %}
+                <a href="{{ page.repo }}/releases/latest/download/{{ item.bin }}" class="list-group-item list-group-item-action">
+                    <span style="font-weight: 600;">
+                        {% if item.platform == "windows" %}
+                        <i class="bi bi-windows"></i>
+                        {% elsif item.platform == "linux" %}
+                        <i class="bi bi-ubuntu"></i>
+                        {% elsif item.platform == "macos" %}
+                        <i class="bi bi-apple"></i>
+                        {% else %}
+                        <i class="bi bi-file-earmark-zip"></i>
+                        {% endif %}
+                        {{ item.name }}
+                        <span style="float:right;">
+                            <i class="bi bi-download"></i>
+                        </span>
+                    </span>
+                </a>
+              {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="col-lg translucent-frame-pill">
+        {{ content }}
+    </div>
 </div>
+</body>

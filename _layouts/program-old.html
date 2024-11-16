@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="container text-center pb-3" id="projectPage">
+  {% if page.archived == true %}
+  <div class="alert alert-warning" role="alert">
+    <span class="badge bg-warning text-dark">Important</span> This project is no longer maintained and does not recieve updates.
+  </div>
+  {% endif %}
+  <img src="{{ page.iconurl }}" class="projectimg" style="width:256px;height:256px;padding-top:8px;" alt="The icon for {{ page.title }}.">
+  <h1>{{ page.title }}</h1>
+  <p><b>Platform(s): </b>{{ page.platform }}</p>
+  <p><b>Written in: </b>{{ page.language }}</p>
+  <div class="dropdown pb-3">
+    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      Project Links
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      {% for item in page.links %}
+      <li><a class="dropdown-item" href="{{ item.link }}">{{ item.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  {{ content }}
+</div>
