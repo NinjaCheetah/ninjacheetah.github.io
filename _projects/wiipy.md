@@ -11,9 +11,12 @@ releases:
   - name: Linux
     platform: linux
     bin:  WiiPy-Linux-bin.tar.gz 
-  - name: macOS
+  - name: macOS (x86_64)
     platform: macos
-    bin: WiiPy-macOS-bin.tar.gz
+    bin: WiiPy-macOS-x86_64-bin.tar.gz
+  - name: macOS (arm64)
+    platform: macos
+    bin: WiiPy-macOS-arm64-bin.tar.gz
 ---
 
 # WiiPy
