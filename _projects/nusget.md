@@ -1,6 +1,6 @@
 ---
 title: NUSGet
-layout: program
+layout: project
 icon: NUSGet.png
 short-desc:  A modern and supercharged NUS downloader built with Python and Qt6. Powered by libWiiPy and libTWLPy.
 repo: https://github.com/NinjaCheetah/NUSGet

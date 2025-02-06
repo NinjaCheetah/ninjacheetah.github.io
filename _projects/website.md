@@ -1,6 +1,6 @@
 ---
 title: Website
-layout: program
+layout: project
 icon: website.png
 short-desc: The website you're currently browsing.
 repo: https://github.com/NinjaCheetah/ninjacheetah.github.io

@@ -1,6 +1,6 @@
 ---
 title: libWiiPy
-layout: program
+layout: project
 icon: placeholder.png
 short-desc: A modern Python library for handling files and formats used by the Wii.
 repo: https://github.com/NinjaCheetah/libWiiPy

@@ -1,6 +1,6 @@
 ---
 title: WiiPy
-layout: program
+layout: project
 icon: placeholder.png
 short-desc:  A simple command line tool for managing file formats used on the Wii.
 repo: https://github.com/NinjaCheetah/WiiPy
