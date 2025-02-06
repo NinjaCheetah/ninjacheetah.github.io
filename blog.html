@@ -5,28 +5,27 @@ layout: gradient-bg
 
 <!--Blog taken from the NCX Programming website. www.ncxprogramming.com-->
 
-{% include nav.html %}
 <link rel="stylesheet" href="/assets/css/blog.css">
 
 {% assign years = site.posts
 | group_by_exp: "post", "post.date | date: '%Y'"
 %}
 
-<div class="container align-items-center min-vh-100">
+<div class="container align-items-center min-vh-100 mt-3">
     {% for year in years %}
     <h1>{{ year.name }}</h1>
     <div class="row" style="margin-bottom:7rem">
         {% for post in year.items %}
-        <div class="col-xl-4">
+        <div class="col-xl-4 mb-3">
             {% if post.hidden == null %}
-            <div class="card">
+            <div class="card translucent-card">
                 {% if post.icon == null %}
                 <img src="assets/img/blog/blog-placeholder.png" class="card-img-top">
                 {% else %}
                 <img src="{{ post.icon }}" class="card-img-top">
                 {% endif %}
                 <div class="card-body">
-                    <h4 class="card-title text-start blog-title"><a href="{{ post.url }}" class="text-primary">{{ post.title }}</a></h4>
+                    <h4 class="card-title text-start blog-title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
                     <p class="author-date">{{ post.date | date: "%Y-%m-%d" }}</p>
                     {% if post.desc == null %}
                     <p class="card-text">{{ post.excerpt }}</p>
@@ -35,7 +34,6 @@ layout: gradient-bg
                     {% endif %}
                 </div>
             </div>
-            <div style="opacity: 0">.</div>
             {% endif %}
         </div>
         {% endfor %}

@@ -3,10 +3,9 @@ title: projects
 layout: gradient-bg
 ---
 
-{% include nav.html %}
-<div class="row align-items-center">
+<div class="row align-items-center mt-3">
     {% for project in site.projects %}
-    <div class="col-lg-3 mb-4">
+    <div class="col-lg-3 mb-3">
         <a href="{{ project.url }}" style="text-decoration: none;">
             <div class="translucent-frame-pill text-center">
                 <img src="/assets/icons/{{ project.icon }}" class="img-pill" style="height: auto; width: 11rem" alt="Icon for the program {{ project.title }}">

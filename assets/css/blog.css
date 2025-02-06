@@ -23,10 +23,9 @@ a {
 
 .author-date {
     font-size: 0.75rem;
-    font-weight: 450;
+    font-weight: bolder;
     text-align: start;
     margin-bottom: -3%;
-    color: rgb(70, 70, 70);
 }
 
 [data-bs-theme="dark"] .author-date {
