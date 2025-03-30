@@ -6,7 +6,7 @@ layout: default
     body {
         background-size: 500% 500%;
         background-position: 0 0, 0 0, 0 0, 0 0, 0 0;
-        background-image: linear-gradient(90deg, #4F007CFF 0%, #006BACFF 100%);
+        background-image: linear-gradient(90deg, #1e1921 0%, #1b1921 100%);
         border-color: transparent;
     }
 
@@ -16,14 +16,30 @@ layout: default
     }
 </style>
 <body data-bs-theme="light"> <!--this is a workaround because some people have the dark theme set from when that was an option and that breaks stuff-->
-<div class="text-center pt-3 text-white">
-    <h1>{{ page.title }}</h1>
-    <h4>{{ page.date | date: "%Y-%m-%d" }}</h4>
-</div>
-<div class="container">
-    <hr style="color: white;">
-    <div class="container-fluid min-vh-100 text-white blog-content">
-        {{ content }}
+    <div class="text-center pt-3 text-white">
+        <h1>{{ page.title }}</h1>
+        <h4>{{ page.date | date: "%Y-%m-%d" }}</h4>
     </div>
-</div>
+    <div class="container">
+        <hr style="color: white;">
+        <div class="container-fluid min-vh-100 text-white blog-content pb-3">
+            {{ content }}
+            <script src="https://giscus.app/client.js"
+            data-repo="NinjaCheetah/ninjacheetah.github.io"
+            data-repo-id="MDEwOlJlcG9zaXRvcnkyNDUwMjQwNDA="
+            data-category="Article Comments"
+            data-category-id="DIC_kwDODprFKM4ConHT"
+            data-mapping="title"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="dark_dimmed"
+            data-lang="en"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+            </script>
+        </div>
+    </div>
 </body>
