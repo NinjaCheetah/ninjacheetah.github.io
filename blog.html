@@ -14,9 +14,9 @@ layout: gradient-bg
 <div class="container align-items-center min-vh-100 mt-3">
     {% for year in years %}
     <h1>{{ year.name }}</h1>
-    <div class="row" style="margin-bottom: 5rem;">
+    <div class="row" style="margin-bottom: 2rem;">
         {% for post in year.items %}
-        <div class="col-xl-4">
+        <div class="col-xl-4 mb-3">
             {% if post.hidden == null %}
             <div class="card translucent-card">
                 {% if post.icon == null %}
