@@ -20,6 +20,7 @@ releases:
   - name: macOS (arm64)
     platform: macos
     bin: NUSGet-macOS-arm64-bin.tar.gz
+mirror: https://git.ninjacheetah.dev/NinjaCheetah/NUSGet
 ---
 
 # NUSGet

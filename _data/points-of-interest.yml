@@ -3,7 +3,7 @@
   url: https://github.com/NinjaCheetah
   icon: github
 - name: github (NCX Programming)
-  description: the place where magic used to happen
+  description: the place where magic used to happen (mostly inactive there now)
   url: https://github.com/NCX-Programming
   icon: github
 - name: mastodon
@@ -14,6 +14,10 @@
   description: where i post threads about my project updates
   url: https://gbatemp.net/members/ninjacheetah.536343/
   icon: globe
+- name: pixelfed
+  description: where i post photos of my real life adventures (i go outside sometimes!)
+  url: https://pixelfed.social/NinjaCheetah
+  icon: camera
 - name: youtube
   description: fairly inactive but i upload videos of what im doing here sometimes
   url: https://www.youtube.com/@ninjacheetah100

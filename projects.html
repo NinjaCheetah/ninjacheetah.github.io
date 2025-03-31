@@ -3,16 +3,24 @@ title: projects
 layout: gradient-bg
 ---
 
-<div class="row align-items-center mt-3">
-    {% for project in site.projects %}
-    <div class="col-lg-3 mb-3">
-        <a href="{{ project.url }}" style="text-decoration: none;">
-            <div class="translucent-frame-pill text-center">
-                <img src="/assets/icons/{{ project.icon }}" class="img-pill" style="height: auto; width: 11rem" alt="Icon for the program {{ project.title }}">
-                <h1 style="font-weight: 600; font-size: 2.5em;" class="mt-3 mb-3">{{ project.title }}</h1>
-                <p style="font-weight: 300; font-size: 1em;">{{ project.short-desc }}</p>
+<div class="container-fluid align-items-center min-vh-100 mt-3">
+    <div class="row" style="margin-bottom: 2rem;">
+            {% for project in site.projects %}
+            <div class="col-md-3 mb-3">
+                <div class="card translucent-card">
+                    {% if project.icon == null %}
+                    <img src="/assets/img/icons/placeholder.png" class="card-img-top img-fluid">
+                    {% else %}
+                    <img src="/assets/img/icons/{{ project.icon }}" class="card-img-top img-fluid">
+                    {% endif %}
+                    <div class="card-body">
+                        <h4 class="card-title">{{ project.title }}</h4>
+                        <p class="card-text">{{ project.short-desc }}</p>
+                        <a href="{{ project.url }}" class="card-link">Read More</a>
+                        <a href="{{ project.repo }}" class="card-link">Source Code</a>
+                    </div>
+                </div>
             </div>
-        </a>
-    </div>
-    {% endfor %}
+            {% endfor %}
+        </div>
 </div>

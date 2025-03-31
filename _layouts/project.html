@@ -4,6 +4,7 @@ layout: default
 
 <style>
     body {
+        background: #2B1C42;
         background-size: 500% 500%;
         background-position: 0 0, 0 0, 0 0, 0 0, 0 0;
         background-image: linear-gradient(90deg, #4F007CFF 0%, #006BACFF 100%);
@@ -19,15 +20,17 @@ layout: default
 <div class="row align-items-center min-vh-100">
     <div class="col-lg-4">
         <div class="translucent-frame-pill text-center">
-            <img src="/assets/icons/{{ page.icon }}" class="img-pill" style="height: auto; width: 14rem" alt="Icon for the program {{ page.title }}">
+            <img src="/assets/img/icons/{{ page.icon }}" class="img-pill" style="height: auto; width: 14rem" alt="Icon for the program {{ page.title }}">
             <h1 style="font-weight: 500; font-size: 3.5em" class="mt-2">{{ page.title }}</h1>
             <div class="list-group list-group-horizontal transparent-list text-center mb-2" style="font-size: 1.25em;">
                 <a href="{{ page.repo }}" class="list-group-item list-group-item-action">
                     <span style="font-weight: 600;"><i class="bi bi-github"></i> GitHub</span>
                 </a>
-                <a href="{{ page.repo }}/actions" class="list-group-item list-group-item-action">
-                    <span style="font-weight: 600;"><i class="bi bi-play-circle"></i> Actions</span>
+                {% if page.mirror != null %}
+                <a href="{{ page.mirror }}" class="list-group-item list-group-item-action">
+                    <span style="font-weight: 600;"><i class="bi bi-symmetry-vertical"></i> Mirror</span>
                 </a>
+                {% endif %}
             </div>
             <div class="list-group transparent-list text-start mb-2">
                 <a href="{{ page.repo }}/archive/refs/heads/main.zip" class="list-group-item list-group-item-action">

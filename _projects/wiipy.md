@@ -17,6 +17,7 @@ releases:
   - name: macOS (arm64)
     platform: macos
     bin: WiiPy-macOS-arm64-bin.tar.gz
+mirror: https://git.ninjacheetah.dev/NinjaCheetah/WiiPy
 ---
 
 # WiiPy

@@ -4,6 +4,7 @@ titleshort: VEX Robotics Gripes
 layout: blogpost
 icon: assets/img/blog/2025-03-30-vex-robotics-gripes/vexv5-logo.png
 desc: I've recently been working with VEX Robotics' software in school, and oh boy have I encountered a lot of really annoying issues.
+updated:
 ---
 
 It's my senior year of high school, and I've been taking a year-long robotics class, mostly just because I'm going into Computer Science in college and my school doesn't offer much else in the way of CS classes. I'll be the first to admit that mechanical engineering is absolutely not my strong suit. I've had a number of *mechanical* issues throughout my time in this class, but I'm not going to try and deflect the blame for that onto anyone but myself. *However,* when it comes to the programming part of building a robot, I understand what's going on a little bit more.
