@@ -45,6 +45,7 @@ layout: default
             </div>
             <div class="list-group transparent-list text-start">
               {% for item in page.releases %}
+                {% if item.platform != "web" %}
                 <a href="{{ page.repo }}/releases/latest/download/{{ item.bin }}" class="list-group-item list-group-item-action">
                     <span style="font-weight: 600;">
                         {% if item.platform == "windows" %}
@@ -62,6 +63,17 @@ layout: default
                         </span>
                     </span>
                 </a>
+                {% else if item.platform == "web" %}
+                <a href="{{ item.url }}" class="list-group-item list-group-item-action">
+                    <span style="font-weight: 600;">
+                        <i class="bi bi-globe"></i>
+                        {{ item.name }}
+                        <span style="float:right;">
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </span>
+                    </span>
+                </a>
+                {% endif %}
               {% endfor %}
             </div>
         </div>
