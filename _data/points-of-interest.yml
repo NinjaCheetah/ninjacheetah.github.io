@@ -2,16 +2,12 @@
   description: the place where all of the magic happens
   url: https://github.com/NinjaCheetah
   icon: github
-- name: github (NCX Programming)
-  description: the place where magic used to happen (mostly inactive there now)
-  url: https://github.com/NCX-Programming
-  icon: github
 - name: mastodon
   description: where i post shorter project updates and what i'm up to
   url: https://mastodon.online/@NinjaCheetah
   icon: mastodon
 - name: gbatemp
-  description: where i post threads about my project updates
+  description: where i post threads about my Nintendo console projects
   url: https://gbatemp.net/members/ninjacheetah.536343/
   icon: globe
 - name: pixelfed
