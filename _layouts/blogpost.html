@@ -2,48 +2,56 @@
 layout: default
 ---
 
-<style>
-    body {
-        background: #202128;
-        background-size: 500% 500%;
-        background-position: 0 0, 0 0, 0 0, 0 0, 0 0;
-        background-image: linear-gradient(90deg, #1e1921 0%, #1b1921 100%);
-        border-color: transparent;
-    }
-
-    .blog-content a {
-        color: white;
-        font-weight: 500;
-    }
-</style>
-<body>
-    <div class="container pt-3 pb-3 text-white">
-        <div class="container-fluid min-vh-100 blog-content">
-            <h1>{{ page.title }}</h1>
-            <h4>Published {{ page.date | date: "%Y-%m-%d" }}</h4>
+<div class="container pt-3 pb-3 text-white">
+    <div class="container-fluid min-vh-100 blog-content">
+        <h1>{{ page.title }}</h1>
+        <p>
+            <strong>Published {{ page.date | date: "%Y-%m-%d" }}</strong>,
             {% if page.updated == null %}
-            <p><i>Last Updated: Never</i></p>
+            <i>Last Updated: Never</i>
             {% else %}
-            <p><i>Last Updated: {{ page.updated }}</i></p>
+            <i>Last Updated: {{ page.updated }}</i>
             {% endif %}
-            <hr style="color: white;">
-            {{ content }}
-            <script src="https://giscus.app/client.js"
-            data-repo="NinjaCheetah/ninjacheetah.github.io"
-            data-repo-id="MDEwOlJlcG9zaXRvcnkyNDUwMjQwNDA="
-            data-category="Article Comments"
-            data-category-id="DIC_kwDODprFKM4ConHT"
-            data-mapping="title"
-            data-strict="0"
-            data-reactions-enabled="1"
-            data-emit-metadata="0"
-            data-input-position="top"
-            data-theme="dark_dimmed"
-            data-lang="en"
-            data-loading="lazy"
-            crossorigin="anonymous"
-            async>
-            </script>
-        </div>
+        </p>
+        {% if page.series_next %}
+            {% assign next_post = site.posts | where: "slug", page.series_next | first %}
+            {% if next_post %}
+                <p>
+                    <strong>Next:</strong>
+                    <a href="{{ next_post.url }}">
+                        {{ next_post.title }}
+                    </a>
+                </p>
+            {% endif %}
+        {% endif %}
+        {% if page.series_prev %}
+            {% assign prev_post = site.posts | where: "slug", page.series_prev | first %}
+            {% if prev_post %}
+                <p>
+                    <strong>Previous:</strong>
+                    <a href="{{ prev_post.url }}">
+                        {{ prev_post.title }}
+                    </a>
+                </p>
+            {% endif %}
+        {% endif %}
+        <br>
+        {{ content }}
+        <script src="https://giscus.app/client.js"
+        data-repo="NinjaCheetah/ninjacheetah.github.io"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkyNDUwMjQwNDA="
+        data-category="Article Comments"
+        data-category-id="DIC_kwDODprFKM4ConHT"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+        </script>
     </div>
-</body>
+</div>

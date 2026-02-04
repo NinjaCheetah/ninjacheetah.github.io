@@ -1,86 +1,118 @@
-@import '/assets/bootstrap/css/bootstrap.min.css';
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-
 :root {
-    font-family: Inter, sans-serif;
-    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
 @supports (font-variation-settings: normal) {
-    :root { font-family: InterVariable, sans-serif; }
-}
-body {
-    font-family: Inter, sans-serif;
-    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  :root { font-family: InterVariable, sans-serif; }
 }
 
-.translucent-pill {
-    background-color: rgba(70, 70, 70, 0.6);
-    backdrop-filter: blur(1rem);
-    /*border: 1px solid rgb(255, 255, 255);*/
-    border-radius: 25px;
-    margin: 2%;
-    width: 96%;
-    height: 90%;
-    padding: 20px 20px 20px 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+a {
+  text-decoration: underline dotted;
 }
 
-.translucent-frame-pill {
-    background-color: rgba(70, 70, 70, 0.6);
-    backdrop-filter: blur(1rem);
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 25px;
-    margin: 2%;
-    width: 96%;
-    height: 90%;
-    padding: 15px 15px 15px 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+img {
+  width: 100%;
 }
 
-.translucent-card {
-    background-color: rgba(70, 70, 70, 0.6);
-    backdrop-filter: blur(1rem);
-    border: 1px solid rgb(255, 255, 255);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
-    --bs-card-color: #f8f9fa;
-    --bs-card-subtitle-color: #f8f9fa;
+svg {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.transparent-list {
-    --bs-list-group-bg: rgba(0, 0, 0, 0);
-    --bs-list-group-color: #dee2e6;
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
-.img-frame-pill {
-    background-color: rgba(70, 70, 70, 0.6);
-    backdrop-filter: blur(1.5rem);
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 35px;
-    width: 90%;
-    height: 90%;
-    box-shadow: 0 4px 8px 0 rgba(50, 50, 50, 0.4), 0 6px 20px 0 rgba(50, 50, 50, 0.39);
+.nav ul {
+    list-style: none;
 }
 
-.img-pill {
-    background-color: rgba(70, 70, 70, 0.6);
-    backdrop-filter: blur(1.5rem);
-    border-radius: 35px;
-    width: 90%;
-    height: 90%;
-    box-shadow: 0 4px 8px 0 rgba(50, 50, 50, 0.4), 0 6px 20px 0 rgba(50, 50, 50, 0.39);
+.nav li {
+    list-style: none;
+    margin: 0 0.5rem;
 }
 
-.bg-glass-bordered {
-    background-color: rgba(33, 37, 41, 0.7);
-    border-bottom: 2px solid rgb(160, 160, 160);
-    backdrop-filter: blur(1.25rem);
+.content {
+  width: 100%;
+  max-width: clamp(320px, 45vw, 600px);
+  margin: 0 auto;
+  padding: 1rem;
 }
 
-.bg-glass {
-    background-color: rgba(33, 37, 41, 0.7);
-    backdrop-filter: blur(1.25rem);
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 3rem;
 }
 
-code {
-    color: lightcoral;
+.page-intro {
+    padding-bottom: 2rem;
+}
+
+.blog-list-year {
+    padding-bottom: 1rem;
+}
+
+.block-quote {
+  margin-left: 10%;
+}
+
+.wrap-image {
+  float: left;
+  margin: 0 1rem 1rem 0;
+}
+
+.project-card {
+  padding-bottom: 2rem;
+}
+
+.project-card p {
+  margin: 8px 0;
+  line-height: 24px;
+}
+
+.project-stack-span {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 0;
+}
+
+.dropdown-content li {
+  list-style: none;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+/* Desktop hover */
+@media (hover: hover) {
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+
+/* Click/tap toggle */
+.dropdown.open .dropdown-content {
+  display: block;
 }

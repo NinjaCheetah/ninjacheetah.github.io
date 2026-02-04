@@ -1,0 +1,28 @@
+- name: TigerDine
+  desc: A simple app to get information about RIT's dining locations.
+  url: https://github.com/NinjaCheetah/TigerDine
+  stack: Swift, SwiftUI
+- name: NUSGet
+  desc: A modern and supercharged NUS downloader built with Python and Qt6. Powered by libWiiPy and libTWLPy.
+  url: https://github.com/NinjaCheetah/NUSGet
+  stack: Python, Qt6
+- name: TigerDine-For-Android
+  desc: what if TigerDine but for the other major smartphone demographic
+  url: https://github.com/NinjaCheetah/TigerDine-For-Android
+  stack: Kotlin, Jetpack Compose
+- name: libWiiPy
+  desc: A modern Python library for handling files and formats used by the Wii.
+  url: https://github.com/NinjaCheetah/libWiiPy
+  stack: Python
+- name: WiiPy
+  desc: A command line tool for managing file formats used on the Wii.
+  url: https://github.com/NinjaCheetah/WiiPy
+  stack: Python
+- name: RNGadget
+  desc: The best way to generate random numbers on macOS 12+, iOS 15+, and watchOS 8+ (formerly RNGTool).
+  url: https://github.com/NinjaCheetah/RNGadget
+  stack: Swift, SwiftUI
+- name: AhCounter
+  desc: A customizable Discord bot for counting words (such as "Ah"!).
+  url: https://github.com/NinjaCheetah/AhCounter
+  stack: Python, Discord.py, SQLite

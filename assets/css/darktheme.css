@@ -1,0 +1,20 @@
+body {
+    color: #FFFFFF;
+    background-color: #2E0066;
+}
+
+a {
+    color: #FFFFFF;
+}
+
+.blog-list-date-span {
+    color: #BBBBBB;
+}
+
+.dropdown-content {
+    background-color: #2E0066;
+}
+
+.dropdown-content a:hover {
+  background-color: #210048;
+}

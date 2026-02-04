@@ -1,0 +1,20 @@
+---
+title: links
+layout: default
+permalink: /links/
+---
+
+<div class="page-intro">
+    <h1>links</h1>
+    <p>or "points of interest", if you prefer the phrasing from the previous iteration of ninjacheetah.dev</p>
+</div>
+
+<div>
+    {% for item in site.data.links %}
+    <p>
+        <a href="{{ item.url }}" target="_blank"><span style="font-size: 1.5em; font-weight: 600;">{{ item.name }}</span></a>
+        <br>
+        {{ item.description }}
+    </p>
+    {% endfor %}
+</div>

@@ -1,26 +1,27 @@
 ---
 title: projects
-layout: gradient-bg
+layout: default
+permalink: /projects/
 ---
 
-<div class="container-fluid align-items-center min-vh-100 mt-3">
-    <div class="row" style="margin-bottom: 2rem;">
-            {% for project in site.projects %}
-            <div class="col-md-3 mb-3">
-                <div class="card translucent-card">
-                    {% if project.icon == null %}
-                    <img src="/assets/img/icons/placeholder.png" class="card-img-top img-fluid">
-                    {% else %}
-                    <img src="/assets/img/icons/{{ project.icon }}" class="card-img-top img-fluid">
-                    {% endif %}
-                    <div class="card-body">
-                        <h4 class="card-title">{{ project.title }}</h4>
-                        <p class="card-text">{{ project.short-desc }}</p>
-                        <a href="{{ project.url }}" class="card-link">Read More</a>
-                        <a href="{{ project.repo }}" class="card-link">Source Code</a>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
+<div class="page-intro">
+    <h1>projects</h1>
+    <p>the various cool things that I've created or otherwise worked on!</p>
+</div>
+
+<div>
+    {% for item in site.data.projects %}
+    <div class="project-card">
+        <a href="{{ item.url }}" target="_blank">
+            {% include svg/project-banners/{{ item.name }}.svg %}
+        </a>
+        <p>
+            <a href="{{ item.url }}" target="_blank"><span style="font-size: 1.5em; font-weight: 600;">{{ item.name }}</span></a>
+            <br>
+            <span class="project-stack-span">Stack: {{ item.stack }}</span>
+            <br>
+            {{ item.desc }}
+        </p>
+    </div>
+    {% endfor %}
 </div>
