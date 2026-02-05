@@ -82,6 +82,17 @@ svg {
   font-weight: 300;
 }
 
+.blog-content img {
+  display: block;
+  margin: auto;
+}
+
+img + em { 
+  font-size: 0.75rem;
+  display: block;
+  text-align: center;
+}
+
 .dropdown {
   position: relative;
 }

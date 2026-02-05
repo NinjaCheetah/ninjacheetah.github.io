@@ -2,56 +2,56 @@
 layout: default
 ---
 
-<div class="container pt-3 pb-3 text-white">
-    <div class="container-fluid min-vh-100 blog-content">
-        <h1>{{ page.title }}</h1>
-        <p>
-            <strong>Published {{ page.date | date: "%Y-%m-%d" }}</strong>,
-            {% if page.updated == null %}
-            <i>Last Updated: Never</i>
-            {% else %}
-            <i>Last Updated: {{ page.updated }}</i>
-            {% endif %}
-        </p>
-        {% if page.series_next %}
-            {% assign next_post = site.posts | where: "slug", page.series_next | first %}
-            {% if next_post %}
-                <p>
-                    <strong>Next:</strong>
-                    <a href="{{ next_post.url }}">
-                        {{ next_post.title }}
-                    </a>
-                </p>
-            {% endif %}
+<div>
+    <h1>{{ page.title }}</h1>
+    <p>
+        <strong>Published {{ page.date | date: "%Y-%m-%d" }}</strong>,
+        {% if page.updated == null %}
+        <i>Last Updated: Never</i>
+        {% else %}
+        <i>Last Updated: {{ page.updated }}</i>
         {% endif %}
-        {% if page.series_prev %}
-            {% assign prev_post = site.posts | where: "slug", page.series_prev | first %}
-            {% if prev_post %}
-                <p>
-                    <strong>Previous:</strong>
-                    <a href="{{ prev_post.url }}">
-                        {{ prev_post.title }}
-                    </a>
-                </p>
-            {% endif %}
+    </p>
+    {% if page.series_next %}
+        {% assign next_post = site.posts | where: "slug", page.series_next | first %}
+        {% if next_post %}
+            <p>
+                <strong>Next:</strong>
+                <a href="{{ next_post.url }}">
+                    {{ next_post.title }}
+                </a>
+            </p>
         {% endif %}
-        <br>
+    {% endif %}
+    {% if page.series_prev %}
+        {% assign prev_post = site.posts | where: "slug", page.series_prev | first %}
+        {% if prev_post %}
+            <p>
+                <strong>Previous:</strong>
+                <a href="{{ prev_post.url }}">
+                    {{ prev_post.title }}
+                </a>
+            </p>
+        {% endif %}
+    {% endif %}
+    <br>
+    <div class="blog-content">
         {{ content }}
-        <script src="https://giscus.app/client.js"
-        data-repo="NinjaCheetah/ninjacheetah.github.io"
-        data-repo-id="MDEwOlJlcG9zaXRvcnkyNDUwMjQwNDA="
-        data-category="Article Comments"
-        data-category-id="DIC_kwDODprFKM4ConHT"
-        data-mapping="title"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="light"
-        data-lang="en"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-        </script>
     </div>
+    <script src="https://giscus.app/client.js"
+    data-repo="NinjaCheetah/ninjacheetah.github.io"
+    data-repo-id="MDEwOlJlcG9zaXRvcnkyNDUwMjQwNDA="
+    data-category="Article Comments"
+    data-category-id="DIC_kwDODprFKM4ConHT"
+    data-mapping="title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="en"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async>
+    </script>
 </div>
