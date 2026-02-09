@@ -11,6 +11,18 @@
         <script src="{{ '/assets/js/themeSwitcher.js' | relative_url }}"></script>
         <script src="{{ '/assets/js/footerDate.js' | relative_url }}"></script>
         <meta name="fediverse:creator" content="@NinjaCheetah@mastodon.online">
+        <meta name="author" content="Campbell (NinjaCheetah)">
+        <meta property="og:title" content="{{ page.title }}">
+        <meta property="og:url" content="{{ page.url | absolute_url }}">
+        <meta property="og:site_name" content="ninjacheetah.dev">
+        <meta name="twitter:title" content="{{ page.title }}">
+        <meta property="twitter:url" content="{{ page.url | absolute_url }}">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="{{ '/assets/image/embed-banner.png' | absolute_url}}">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="{{ '/assets/image/embed-banner.png' | absolute_url}}">
+        <meta property="og:description" content="{{ page.desc }}">
+        <meta name="twitter:description" content="{{ page.desc }}">
     </head>
     <body>
         <div class="content">
