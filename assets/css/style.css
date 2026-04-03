@@ -98,6 +98,16 @@ img + em {
   margin-block: 1rem;
 }
 
+.misc-entry a {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+/* 
+This is commented out just to denote that I removed the dropdown and it is therefore
+unnecessary but if I actually delete it I'm suddenly going to need it again or
+something so it can just stay I guess.
+
 .dropdown {
   position: relative;
 }
@@ -121,14 +131,12 @@ img + em {
   text-decoration: none;
 }
 
-/* Desktop hover */
-@media (hover: hover) {
+/* @media (hover: hover) {
   .dropdown:hover .dropdown-content {
     display: block;
   }
 }
 
-/* Click/tap toggle */
 .dropdown.open .dropdown-content {
   display: block;
-}
+} */
