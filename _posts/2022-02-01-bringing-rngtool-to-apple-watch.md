@@ -2,7 +2,7 @@
 title: Bringing RNGTool to Your Wrist (Maybe)
 titleshort: Bringing RNGTool to Apple Watches
 layout: blogpost
-icon: https://cdn.ncxprogramming.com/file/blog/2022-02-01/rngtool-wrist-dice-mode.png
+icon: https://d1jzqt674xwkpq.cloudfront.net/file/blog/2022-02-01/rngtool-wrist-dice-mode.png
 desc:
 updated:
 ---
@@ -15,10 +15,10 @@ RNGTool is by no means a visually simple app. I've definitely overcomplicated it
 
 Here's the interesting part, a comparison of the iOS and watchOS apps:
 
-![](https://cdn.ncxprogramming.com/file/blog/2022-02-01/rngtool-mobile-number-mode.png) ![](https://cdn.ncxprogramming.com/file/blog/2022-02-01/rngtool-wrist-number-mode.png)
+![](https://d1jzqt674xwkpq.cloudfront.net/file/blog/2022-02-01/rngtool-mobile-number-mode.png) ![](https://d1jzqt674xwkpq.cloudfront.net/file/blog/2022-02-01/rngtool-wrist-number-mode.png)
 
-![](https://cdn.ncxprogramming.com/file/blog/2022-02-01/rngtool-mobile-dice-mode.png) ![](https://cdn.ncxprogramming.com/file/blog/2022-02-01/rngtool-wrist-dice-mode.png)
+![](https://d1jzqt674xwkpq.cloudfront.net/file/blog/2022-02-01/rngtool-mobile-dice-mode.png) ![](https://d1jzqt674xwkpq.cloudfront.net/file/blog/2022-02-01/rngtool-wrist-dice-mode.png)
 
-![](https://cdn.ncxprogramming.com/file/blog/2022-02-01/rngtool-mobile-about.png) ![](https://cdn.ncxprogramming.com/file/blog/2022-02-01/rngtool-wrist-about.png)
+![](https://d1jzqt674xwkpq.cloudfront.net/file/blog/2022-02-01/rngtool-mobile-about.png) ![](https://d1jzqt674xwkpq.cloudfront.net/file/blog/2022-02-01/rngtool-wrist-about.png)
 
 Unfortunately those are all of the screens I've completely finished at this point. I will likely make a post updating on when I finish the rest.

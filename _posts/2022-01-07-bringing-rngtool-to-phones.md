@@ -2,7 +2,7 @@
 title: Bringing RNGTool to Your Pocket (Kinda)
 titleshort: Bringing RNGTool to Phones
 layout: blogpost
-icon: https://cdn.ncxprogramming.com/file/blog/2022-01-07/rngtool-mobile-mode-list-beta.jpg
+icon: https://d1jzqt674xwkpq.cloudfront.net/file/blog/2022-01-07/rngtool-mobile-mode-list-beta.jpg
 desc:
 updated:
 ---
@@ -19,11 +19,11 @@ Armed with this new information, I decided it was about time that I tried to por
 
 While my basic direct code porting was fine to get a working prototype, most of the UI was not really that usable. You can see this early UI below.
 
-![](https://cdn.ncxprogramming.com/file/blog/2022-01-07/rngtool-mobile-mode-list-beta.jpg) ![](https://cdn.ncxprogramming.com/file/blog/2022-01-07/rngtool-mobile-marble-mode-beta.jpg)
+![](https://d1jzqt674xwkpq.cloudfront.net/file/blog/2022-01-07/rngtool-mobile-mode-list-beta.jpg) ![](https://d1jzqt674xwkpq.cloudfront.net/file/blog/2022-01-07/rngtool-mobile-marble-mode-beta.jpg)
 
 And thus began the quest to make RNGTool usable. I started with the settings, as they were a trainwreck that I unfortunately don't have any pictures of (and it was never committed to GitHub so it's long gone). These actually came out pretty well in the end. I managed to keep using the exact same code in both the macOS and iOS versions, just with different wrappings around the actual settings in the two `SettingsView.swift` files. The result is something arguably nicer to use than the macOS version, though I'll let you judge that for yourself.
 
-![](https://cdn.ncxprogramming.com/file/blog/2022-01-07/rngtool-mobile-settings1.png) ![](https://cdn.ncxprogramming.com/file/blog/2022-01-07/rngtool-mobile-settings2.png)
+![](https://d1jzqt674xwkpq.cloudfront.net/file/blog/2022-01-07/rngtool-mobile-settings1.png) ![](https://d1jzqt674xwkpq.cloudfront.net/file/blog/2022-01-07/rngtool-mobile-settings2.png)
 
 Next on the to-do list was to make brand new mobile-focused UIs for the actual generator modes. I tried to do what I did with the settings but it just wasn't working out; the UI needed to be basically redesigned from the ground up to work well on screens as small as 4 inches diagonally (looking at you, iPod Touch 7th gen). The easiest place to start was the text, so I shrank it all down until it was small enough to fit comfortably without being so small that it was hard to read. Then it was time to address the controls.
 
@@ -33,7 +33,7 @@ So by this point we've got working settings and working control (and of course f
 
 While I briefly considered dropping the the dice and card images, I just felt like it would be weird since that was a feature I put a lot of time into on macOS. Thankfully, for literally the first time ever (that I can remember), math was useful in my code. Incredible, isn't it? I figured out how to read the usable screen size, and then used some fancy math to scale the dice and cards (as well as set the card offsets) to fit your screen nicely. The results can be seen below.
 
-![](https://cdn.ncxprogramming.com/file/blog/2022-01-07/rngtool-mobile-dice-mode.png) ![](https://cdn.ncxprogramming.com/file/blog/2022-01-07/rngtool-mobile-card-mode.png)
+![](https://d1jzqt674xwkpq.cloudfront.net/file/blog/2022-01-07/rngtool-mobile-dice-mode.png) ![](https://d1jzqt674xwkpq.cloudfront.net/file/blog/2022-01-07/rngtool-mobile-card-mode.png)
 
 So with that, RNGTool on iOS reached what it is today (more or less, new features have been added that I'm not mentioning here because they weren't part of the inital port). Now, about the "Kinda" in the title. Unfortunately, as I'm not an Apple Developer, I can't publish the app on the App Store or really distribute it at all. So if you want to run it, you'll either need a Jailbroken device on iOS 15 (which is not currently possible) or a sideloading method like [Sideloadly!](https://sideloadly.io) or [AltStore](https://altstore.io). I won't be covering that here, but neither of those programs are particularly hard to use, so it shouldn't be hard to get RNGTool installed. Downloads can be found in the [latest release](https://github.com/NCX-Programming/RNGTool/releases/latest) or as a build artifact in the latest [GitHub Actions run](https://github.com/NCX-Programming/RNGTool/actions).
 

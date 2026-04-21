@@ -15,9 +15,9 @@ My first experience with a false-positive copyright claim was on YouTube when on
 
 My second experience wasn't a claim but instead a takedown. I had been hosting downloads for the music that I made in GarageBand (same songs that caused trouble on YouTube) so I could link to the files on my website. I eventually discovered when linking to one of them that they had just been removed with 0 warning and could no longer be downloaded. Below is an image of what you get if you [visit the download page](https://www.mediafire.com/file/rrjlp7nc3mowrji/Da_Song.m4a/file).
 
-![](https://cdn.ncxprogramming.com/file/blog/2021-05-17/blog-copyright1.png)
+![](https://d1jzqt674xwkpq.cloudfront.net/file/blog/2021-05-17/blog-copyright1.png)
 
-If you're interested, [here's the song I uploaded.](https://cdn.ncxprogramming.com/file/blog/2021-05-17/blog-dasong.m4a) Definitely not what it says it was.
+If you're interested, [here's the song I uploaded.](https://d1jzqt674xwkpq.cloudfront.net/file/blog/2021-05-17/blog-dasong.m4a) Definitely not what it says it was.
 
 **Part II: Why These Claims Happen**
 
