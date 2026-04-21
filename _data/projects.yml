@@ -10,6 +10,10 @@
   desc: A Rust library and CLI for handling files and formats used by the Wii.
   url: https://github.com/NinjaCheetah/rustwii
   stack: Rust
+- name: TigerGoSeek
+  desc: A web app to help with playing hide and seek across the RIT campus.
+  url: https://github.com/NinjaCheetah/TigerGoSeek
+  stack: HTML, JavaScript, Python, FastAPI
 - name: TigerDine-For-Android
   desc: what if TigerDine but for the other major smartphone demographic
   url: https://github.com/NinjaCheetah/TigerDine-For-Android

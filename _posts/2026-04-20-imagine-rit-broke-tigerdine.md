@@ -4,6 +4,7 @@ titleshort: Imagine RIT Broke My App
 layout: blogpost
 desc: Imagine RIT is right around the corner, and a visiting chef that will be here during it completely blew up TigerDine.
 updated:
+favorite: true
 ---
 Imagine RIT is (as I'm writing) this upcoming Saturday! For those unaware, [Imagine](https://www.rit.edu/imagine/) is essentially a giant maker faire that RIT hosts every year, with this year's being on Saturday, April 25. I, being a first year, haven't actually experienced it yet, but I've gotten the impression that it's pretty cool and will be in attendance. However, this event's approach came with a very unexpected consequence: it completely broke TigerDine.
 

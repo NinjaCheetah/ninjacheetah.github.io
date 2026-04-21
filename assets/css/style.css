@@ -57,6 +57,12 @@ svg {
 
 .blog-list-year {
     padding-bottom: 1rem;
+    position: relative;
+}
+
+.favorite-article {
+  position: absolute;
+  left: -1.5rem;
 }
 
 .block-quote {

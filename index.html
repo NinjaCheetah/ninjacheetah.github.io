@@ -19,12 +19,13 @@ layout: default
     <div class="blog-list-year">
         {% for post in year.items %}
         <div>
-            {% if post.hidden == null %}
             <p style="margin-bottom: 1rem;">
+                {% if post.favorite == true %}
+                <span class="favorite-article">★</span>
+                {% endif %}
                 <a href="{{ post.url }}">{{ post.title }}</a> 
                 <span class="blog-list-date-span">{{ post.date | date: "%Y-%m-%d" }}</span>
             </p>
-            {% endif %}
         </div>
         {% endfor %}
     </div>
