@@ -6,6 +6,7 @@ desc: Imagine RIT is right around the corner, and a visiting chef that will be h
 updated:
 favorite: true
 ---
+
 Imagine RIT is (as I'm writing) this upcoming Saturday! For those unaware, [Imagine](https://www.rit.edu/imagine/) is essentially a giant maker faire that RIT hosts every year, with this year's being on Saturday, April 25. I, being a first year, haven't actually experienced it yet, but I've gotten the impression that it's pretty cool and will be in attendance. However, this event's approach came with a very unexpected consequence: it completely broke TigerDine.
 
 For those unaware, TigerDine is a small iOS app that I've been working on throughout this academic year for getting information about the dining locations on campus. RIT's official offerings aren't very good, and I wanted a better source of this information. I'm in the midst of an actual full writeup on the creation of TigerDine, but it's spiraled a little out of control and so I'm not entirely sure when I'll be getting it out yet. Fortunately all you really need to know is that this app exists, it provides information about dining locations, and if you're an RIT student you can go download it [here](https://apps.apple.com/us/app/tigerdine-for-rit-students/id6752275843). Now that we're all on the same page, let's discuss what happened here.
