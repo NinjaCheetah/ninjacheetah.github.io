@@ -23,7 +23,7 @@ It's lived under my bed for a while, but like I said I wanted anything going bac
 ![](/assets/blog-imgs/target-cant-measure/the-bin.jpg)
 *It claims to be 6 1/2" x 16 1/2" x 24" (16.5cm x 41.9cm x 60.9cm).*
 
-This bin seemed great. 16 1/2" is certainly > 15", so my Apple II should fit no problem, right?
+This bin seemed great. 16 1/2" (41.9 cm) is certainly > 15" (38.1 cm), so my Apple II should fit no problem, right?
 
 Right?
 
@@ -32,33 +32,33 @@ Right?
 
 Hmm.
 
-It would appear as though my 15" wide item does not fit into my 16 1/2" wide bin. That's a tad problematic.
+It would appear as though my 15" (38.1 cm) wide item does not fit into my supposedly 16 1/2" (41.9 cm) wide bin. That's a tad problematic.
 
-Obviously, I had to investigate this. I remeasured my Apple II first just to be sure it wasn't my fault somehow, but nope, still 15". My initial assumption from there was that Target (and to be clear, this bin *is* from one of Target's own brands) was just *embellishing* the width of the bin by including the plastic that sticks out beyond the sides of the bin in their 16 1/2" figure. That would be dumb and misleading, don't get me wrong, but I could at least see how we got from A to B if that were the case. I pulled out a measuring tape, measured from the outer edges of the plastic across the bin, and...
+Obviously, I had to investigate this. I remeasured my Apple II first just to be sure it wasn't my fault somehow, but nope, still 15" (38.1 cm). My initial assumption from there was that Target (and to be clear, this bin *is* from one of Target's own brands) was just *embellishing* the width of the bin by including the plastic that sticks out beyond the sides of the bin in their 16 1/2" (41.9 cm) figure. That would be dumb and misleading, don't get me wrong, but I could at least see how we got from A to B if that were the case. I pulled out a measuring tape, measured from the outer edges of the plastic across the bin, and...
 
 ![](/assets/blog-imgs/target-cant-measure/full-width.jpg)
 *Still not quite right...*
 
-Well that's odd. The absolute widest part of the bin is only 15 1/2". Last I checked, that's less than 16 1/2". And as an extra data point, I measured the actual usable space in the bin:
+Well that's odd. The absolute widest part of the bin is only 15 1/2" (39.4 cm). Last I checked, that's less than 16 1/2" (41.9 cm). And as an extra data point, I measured the actual usable space in the bin:
 
 ![](/assets/blog-imgs/target-cant-measure/usable-width.jpg)
 *A whole inch further from the target.*
 
-Just about 14 1/2". That's a full 2" less than what's being advertised! No wonder my Apple II can be perched majestically on top of it.
+Just about 14 1/2" (36.8 cm). That's a full 2" (5.1 cm) less than what's being advertised! No wonder my Apple II can be perched majestically on top of it.
 
-I figured that while I was measuring things, I would check their other dimensions as well. If they're going to be 2" off on usable space width-wise, it wouldn't be crazy to think they might also be lying about the depth. And sure enough:
+I figured that while I was measuring things, I would check their other dimensions as well. If they're going to be 2" (5.1 cm) off on usable space width-wise, it wouldn't be crazy to think they might also be lying about the depth. And sure enough:
 
 ![](/assets/blog-imgs/target-cant-measure/full-depth.jpg)
 *Closer than the width was, but still wrong.*
 
-Just under 23 1/2" is certainly much closer to the target of 24" than the width was to 16 1/2", but that's still noticeably shorter than printed. On top of that, there's a lip in the inside of the bin, so the usable depth is actually substantially shorter than what you'd get if you just measured the inside at the top. And so I measured that:
+Just under 23 1/2" (59.7 cm) is certainly much closer to the target of 24" (61 cm) than the width was to 16 1/2" (41.9 cm), but that's still noticeably shorter than printed. On top of that, there's a lip in the inside of the bin, so the usable depth is actually substantially shorter than what you'd get if you just measured the inside at the top. And so I measured that:
 
 ![](/assets/blog-imgs/target-cant-measure/usable-depth.jpg)
 *And now we're much farther.*
 
-21"! So we're 2" short on width, and 3" short on depth. Awesome. Cool.
+21" (53.3 cm)! So we're 2" (5.1 cm) short on width, and 3" (7.6 cm) short on depth. Awesome. Cool.
 
-The only dimension they *didn't* lie about was the height. I measured the height of the bin, lid on like how I'd expect it to be measured, and it actually came out to the 6 1/2" promised. But for the other two, they're just very incorrect, and so the bin is very unhelpful. 
+The only dimension they *didn't* lie about was the height. I measured the height of the bin, lid on like how I'd expect it to be measured, and it actually came out to the 6 1/2" (16.5 cm) promised. But for the other two, they're just very incorrect, and so the bin is very unhelpful. 
 
 Could this be an honest mistake? I mean I guess? But this feels deliberate in some way. The numbers feel too far off to just be simple measurement errors, but way too close for this to be a situation where the labels got swapped around between differently sized bins during manufacturing or something. And while I may not have a definite answer, I do have a theory. Target, like all giant corporations, are no strangers to shrinkflation. It wouldn't seem completely insane to me that they could have reduced this bin's size by a little bit at some point and continued to use the old labels, because nobody is going to miss a couple inches, right? Yknow, on the thing sold in specific sizes to be able to fit different things. One of the places where the dimensions actually kinda matter a lot.
 
