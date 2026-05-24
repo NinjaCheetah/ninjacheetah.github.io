@@ -2,7 +2,7 @@
 title: ninjacheetah.dev Ultimate Extras™ for Power Users
 titleshort: ninjacheetah.dev Ultimate Extras™ for Power Users
 layout: blogpost
-desc: In this case "power users" means you read my blog from a desktop and not your phone.
+desc: In this case &quot;power users&quot; means you read my blog from a desktop and not your phone.
 updated:
 favorite: false
 ---
