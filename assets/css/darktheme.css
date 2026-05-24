@@ -1,6 +1,6 @@
 body {
     color: #FFFFFF;
-    background-color: #2E0066;
+    background-color: #2a153b;
 }
 
 a {
@@ -11,10 +11,10 @@ a {
     color: #BBBBBB;
 }
 
-.dropdown-content {
+/* .dropdown-content {
     background-color: #2E0066;
 }
 
 .dropdown-content a:hover {
   background-color: #210048;
-}
+} */
