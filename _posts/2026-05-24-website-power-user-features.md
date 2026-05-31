@@ -3,7 +3,7 @@ title: ninjacheetah.dev Ultimate Extras™ for Power Users
 titleshort: ninjacheetah.dev Ultimate Extras™ for Power Users
 layout: blogpost
 desc: In this case &quot;power users&quot; means you read my blog from a desktop and not your phone.
-updated:
+updated: 2026-05-31
 favorite: false
 ---
 
@@ -24,3 +24,12 @@ These features include:
 - A small "back to top" button now sits in the bottom right corner on all blog posts, because I've started writing longer posts and will continue to do this into the future.
 
 These additions should hopefully be useful to at least some people, and should both help with the gigantic novel that is the upcoming "making of TigerDine" article. The minimum window width should also help to ensure that these never get in the way. If the width of your browser is getting too small, they'll both disappear so nothing clips out of view or overlaps.
+
+## Update: May 31, 2026
+So uh, the ToC I had implemented at the time I wrote this article kinda sucked.
+
+I realized pretty quickly after shipping it that it was an unnecessary use of JavaScript that kinda just sucked in terms of actually using the site. So I decided it was probably for the best to rip out the existing table of contents.
+
+Now obviously you're probably seeing the table of contents on the left right now and thinking "hey uh isn't it still here?", and you would be somewhat correct! After using my own site for a little I decided to look into alternatives for building a table of contents, because I figured that there *had* to be a way to have it built by Jekyll at compile time rather than needing to run JavaScript every time a blog post is loaded to create the ToC and add it to the page. And sure enough, there is! Someone named Vladimir Jimenez made a really easy to use Jekyll include that you can drop into your blog post template to generate the table of contents at build time. You can go check that project out [here](https://github.com/allejo/jekyll-toc)! I also adapted the JavaScript that hid the "contents" heading if there were no contents to instead be Liquid that only builds it in if there are headings in the post body. Functionally identical to before (minus the occasional split second of "contents" before the JS ran) but now with 100% less JS!
+
+Anyways, short update done! I now return to the dungeon to continue the TigerDine article (which is now on draft 3!).

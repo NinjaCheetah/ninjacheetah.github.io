@@ -113,12 +113,13 @@ svg {
   float: left;
 }
 
-#toc div {
-  padding-bottom: 5px;
+.toc ul {
+  padding-left: 0;
+  list-style-position: inside;
 }
 
-#toc div.h3 {
-  margin-left: 1em;
+.toc ul ul {
+  padding-left: 2rem;
 }
 
 .back-to-top {

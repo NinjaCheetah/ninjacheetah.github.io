@@ -3,8 +3,12 @@ layout: default
 ---
 
 <div class="blog-layout">
-    <div class="toc" id="toc">
+    <div class="toc">
+        {% assign headings = content | strip | split: '<h' %}
+        {% if headings.size > 1 %}
         <h2>contents</h2>
+        {% endif %}
+        {% include toc.html html=content %}
     </div>
 
     <div class="back-to-top">
