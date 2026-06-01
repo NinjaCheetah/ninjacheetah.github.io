@@ -42,7 +42,7 @@ svg {
 
 .content {
   width: 100%;
-  max-width: clamp(320px, 60vw, 800px);
+  max-width: clamp(320px, 60vw, 700px);
   margin: 0 auto;
   padding: 1rem;
 
@@ -109,7 +109,7 @@ svg {
   position: sticky;
   top: 1rem;
   width: 250px;
-  margin-left: calc(-250px - 2rem);
+  margin-left: calc(-300px - 2rem);
   float: left;
 }
 
