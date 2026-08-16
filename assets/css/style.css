@@ -25,19 +25,19 @@ svg {
 }
 
 .nav {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
 .nav ul {
-    list-style: none;
+  list-style: none;
 }
 
 .nav li {
-    list-style: none;
-    margin: 0 0.5rem;
+  list-style: none;
+  margin: 0 0.5rem;
 }
 
 .content {
