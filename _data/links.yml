@@ -11,7 +11,7 @@
   url: https://gbatemp.net/members/ninjacheetah.536343/
   icon: globe
 - name: pixelfed
-  description: where i post photos of my real life adventures (sometimes, i've kinda taken to uploading those on mastodon instead)
+  description: where i post photos of my real life adventures (rarely, i've kinda taken to uploading those on mastodon instead)
   url: https://pixelfed.social/NinjaCheetah
   icon: camera
 - name: toyhouse
@@ -28,6 +28,6 @@
   icon: globe
 - name: email
   description: you can shoot me an email if you'd like
-  url: mailto:ninjacheetah100@proton.me
+  url: mailto:campbell@ninjacheetah.dev
   icon: envelope-at-fill
   
