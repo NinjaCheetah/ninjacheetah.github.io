@@ -192,6 +192,25 @@ tr:last-child td {
   border-bottom-width: 0;
 }
 
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  
+}
+
+.grid-cap-text {
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.column {
+  margin: 6px;
+}
+
+.disclosure-text {
+  padding-top: 24px;
+}
+
 /* 
 This is commented out just to denote that I removed the dropdown and it is therefore
 unnecessary but if I actually delete it I'm suddenly going to need it again or
